@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+.header {
+  /* background-color: #0a3479; */
+  min-height: 100vh;
+  font-family: "SUSE", sans-serif;
+  background-image: url("../../assets/construction1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+
+.nav_slide {
+  display: none;
+  position: absolute;
+  min-height: 100%;
+  min-width: 40%;
+  background-color: blue;
+  z-index: 2;
+}
+
+.nav_left p {
+  position: relative;
+  z-index: 3;
+}
+
+body:has(.nav_left p:hover) .nav_slide {
+  display: block;
+}
+
+.nav_slide:hover {
+  display: block;
+}
+
+.nav-search {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  padding-top: 10px;
+}
+
+p {
+  letter-spacing: 1px;
+  cursor: pointer;
+  /* display: inline-block; */
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /* align-self: center; */
+  font-weight: 300;
+}
+
+/* .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  } */
+
+p:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: aliceblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav_left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav_right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.slides-container {
+  /* background-color: rgba(60, 81, 113, 0.5); */
+  position: absolute;
+  width: 50vw;
+  /* height: 50vh; */
+  margin: 0 auto;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(#3C5171, 0.5); */
+}
+
+.blur_sheet {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 81, 113, 0.5);
+  backdrop-filter: blur(40px) opacity(1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.blur_sheet h1 {
+  font-size: 3.4rem;
+  max-width: 80%;
+  margin-bottom: 0;
+}
+
+.blur_sheet h5 {
+  max-width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.008em;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+}
+
+.blur_sheet .slide_btn{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .slides-container {
+        bottom: 0;
+        width: 100%;
+    }
+    .blur_sheet {
+        border-radius: 0;
+    }
+}
