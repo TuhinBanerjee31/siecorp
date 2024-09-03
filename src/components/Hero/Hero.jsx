@@ -211,7 +211,7 @@ const Hero = () => {
     <div className="header bg-header-image bg-cover bg-no-repeat min-h-screen">
 
       {/* NAVBAR */}
-      <Navbar className="mx-auto max-w-screen-xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-4">
+      <Navbar className="mx-auto max-w-screen-2xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-4">
         <div className="flex items-center justify-between text-white">
           <div className="hidden lg:block">
             <NavList />
