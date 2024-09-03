@@ -4,6 +4,8 @@ import './App.css'
 import Hero from './components/Hero/Hero'
 import Footer from './components/Footer/Footer'
 import About from './components/About/About'
+import OurWork from './components/OurWork/OurWork'
+import Extra from './components/Extra/Extra'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
     <>
     <Hero />
     <About />
+    <OurWork />
+    <Extra />
     <Footer />
     </>
   )

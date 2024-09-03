@@ -1,7 +1,6 @@
 import React from "react";
 import "./Hero.css";
 import {
-  MagnifyingGlassIcon,
   ArrowRightIcon,
   Bars3Icon,
   XMarkIcon,
@@ -12,6 +11,8 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+
+import logo from '../../assets/siecorp_logo.png'
 
 // NAVBAR-CONTENTS
 function NavList() {
@@ -108,7 +109,7 @@ function NavList2() {
 
 function NavListMerge() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 pt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -210,20 +211,15 @@ const Hero = () => {
     <div className="header bg-header-image bg-cover bg-no-repeat min-h-screen">
 
       {/* NAVBAR */}
-      <Navbar className="mx-auto max-w-screen-xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-3">
+      <Navbar className="mx-auto max-w-screen-xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-4">
         <div className="flex items-center justify-between text-white">
           <div className="hidden lg:block">
             <NavList />
           </div>
 
-          <Typography
-            as="a"
-            href="#"
-            variant="h6"
-            className="mr-4 cursor-pointer py-1.5"
-          >
-            SIECORP
-          </Typography>
+          <div className="md:w-16 w-10 md:h-10 h-5 mr-36">
+            <img src={logo} alt="Siecorp" />
+          </div>
 
           <div className="hidden lg:block">
             <NavList2 />

@@ -11,7 +11,7 @@ module.exports = withMT( {
   theme: {
     extend: {
       backgroundImage: {
-        'header-image': "url('/src/assets/construction1.jpg')",
+        'header-image': "url('/src/assets/ct-4.jpg')",
       },
       fontFamily: { 
         "suse": ["SUSE", 'system-ui'] 
