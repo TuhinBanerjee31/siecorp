@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import About from './components/About/About'
 import OurWork from './components/OurWork/OurWork'
 import Extra from './components/Extra/Extra'
+import NewsSlider from './components/NewsSlider/NewsSlider'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <About />
     <OurWork />
     <Extra />
+    <NewsSlider />
     <Footer />
     </>
   )

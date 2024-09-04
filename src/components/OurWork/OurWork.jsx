@@ -37,21 +37,21 @@ const OurWork = () => {
         <div className="grid gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={p1}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v1}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v2}
               alt=""
             />
@@ -60,21 +60,21 @@ const OurWork = () => {
         <div className="grid gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={p2}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={p3}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v3}
               alt=""
             />
@@ -83,21 +83,21 @@ const OurWork = () => {
         <div className="grid gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={p5}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v4}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v6}
               alt=""
             />
@@ -106,21 +106,21 @@ const OurWork = () => {
         <div className="grid gap-4">
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v7}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={p4}
               alt=""
             />
           </div>
           <div>
             <img
-              className="h-auto max-w-full rounded-lg hover:animate-jump animate-infinite animate-ease-in-out cursor-pointer animate-duration-[5000ms]"
+              className="h-auto max-w-full rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               src={v5}
               alt=""
             />

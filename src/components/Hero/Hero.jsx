@@ -208,7 +208,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="header bg-header-image bg-cover bg-no-repeat min-h-screen">
+    <div className="header bg-header-image md:bg-cover bg-auto bg-no-repeat min-h-screen">
 
       {/* NAVBAR */}
       <Navbar className="mx-auto max-w-screen-2xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-4">
