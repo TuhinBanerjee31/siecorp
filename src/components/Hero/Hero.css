@@ -37,3 +37,11 @@
   background-color: rgba(60, 81, 113, 0.5);
   backdrop-filter: blur(40px) opacity(1);
 }
+
+/* .hover-sheet1{
+  display: none;
+}
+
+.nav-1:hover, .hover-sheet1 {
+  display: inline-block;
+} */
