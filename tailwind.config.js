@@ -12,6 +12,8 @@ module.exports = withMT( {
     extend: {
       backgroundImage: {
         'header-image': "url('/src/assets/ct-4.jpg')",
+        'cv-header-image': "url('/src/assets/cv-header.jpg')",
+        'ob-header-image': "url('/src/assets/ob-header.jpg')",
       },
       fontFamily: { 
         "suse": ["SUSE", 'system-ui'] 
