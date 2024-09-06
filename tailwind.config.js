@@ -14,9 +14,15 @@ module.exports = withMT( {
         'header-image': "url('/src/assets/ct-4.jpg')",
         'cv-header-image': "url('/src/assets/cv-header.jpg')",
         'ob-header-image': "url('/src/assets/ob-header.jpg')",
+        'ol-header-image': "url('/src/assets/ol-header.jpg')",
+        'e-header-image': "url('/src/assets/e-header.jpg')",
+        'm-header-image': "url('/src/assets/m-header.jpg')",
       },
       fontFamily: { 
         "suse": ["SUSE", 'system-ui'] 
+    },
+    boxShadow: {
+      'custom': 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
     },
     },
   },
