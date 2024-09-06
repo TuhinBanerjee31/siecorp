@@ -45,7 +45,7 @@ const CoreValues = () => {
 
   return (
     <div className="min-h-screen text-black font-suse">
-      <Nav bgImage="cv-header-image" />
+      <Nav bgImage="temp-cv-header-image" />
 
       {/* CONTENT AREA */}
       <div className="content-info max-w-screen-md mx-auto px-10 absolute bottom-0">
