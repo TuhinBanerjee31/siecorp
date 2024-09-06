@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div>
-      <Nav bgImage= 'temp-header-image' />
+      <Nav bgImage= 'ob-header-image' />
 
       {/* HEADER-CARD */}
       <div className="slides-container text-white md:bottom-[20%] bottom-0 absolute left-0 right-0">
