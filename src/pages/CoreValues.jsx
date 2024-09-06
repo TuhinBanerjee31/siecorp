@@ -45,12 +45,12 @@ const CoreValues = () => {
 
   return (
     <div className="min-h-screen text-black font-suse">
-      <Nav bgImage="temp-cv-header-image" />
+      <Nav bgImage="m-header-image" />
 
       {/* CONTENT AREA */}
       <div className="content-info max-w-screen-md mx-auto px-10 absolute bottom-0">
-          <h5 className="text-[#0B2D71] text-xl font-semibold">culture</h5>
-          <h1 className="md:text-6xl text-4xl font-bold text-[#0B2D71]">
+          <h5 className="text-[#00A3C3] text-xl font-semibold">culture</h5>
+          <h1 className="md:text-6xl text-4xl font-bold text-[#00A3C3]">
             our employees put values into action
           </h1>
           <h4 className="text-lg py-10 tracking-wider text-white">
