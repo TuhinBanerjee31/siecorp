@@ -16,7 +16,7 @@ function App() {
     <About />
     <OurWork />
     <Extra />
-    <NewsSlider />
+    <NewsSlider title="latest at siecorp" />
     <Footer />
     </>
   )

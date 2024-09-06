@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,14 +12,14 @@ import slide4 from '../../assets/slide4.jpg'
 import slide5 from '../../assets/slide5.jpg'
 import slide6 from '../../assets/slide6.jpg'
 
-const NewsSlider = () => {
+const NewsSlider = (props) => {
   return (
     <div className="min-h-screen font-suse overflow-hidden">
       <div className="container py-20 flex md:flex-row flex-col justify-around items-center mx-auto">
         <div className="titles py-10">
           <h5 className="text-[#0B2D71] text-2xl py-2">newsroom</h5>
           <h2 className="text-[#0B2D71] font-extrabold text-5xl md:max-w-xs">
-            latest at siecorp
+            {props.title}
           </h2>
         </div>
 

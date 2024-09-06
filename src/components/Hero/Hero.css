@@ -1,47 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
-
-.header {
-    font-family: "SUSE", sans-serif;
-}
-
-.p {
-  letter-spacing: 1px;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  align-self: center;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.p:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: aliceblue;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.p:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .blur_sheet {
   background-color: rgba(60, 81, 113, 0.5);
   backdrop-filter: blur(40px) opacity(1);
 }
-
-/* .hover-sheet1{
-  display: none;
-}
-
-.nav-1:hover, .hover-sheet1 {
-  display: inline-block;
-} */

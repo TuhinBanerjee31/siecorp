@@ -1,269 +1,29 @@
 import React from "react";
-// import "./Hero.css";
-import {
-  ArrowRightIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
-import { NavLink } from "react-router-dom";
-import logo from "../assets/siecorp_logo.png";
 import sampleImage from "../assets/sample.jpg";
 import ob1 from "../assets/ob1.png";
 import ob2 from "../assets/ob2.png";
 import ob3 from "../assets/ob3.jpg";
+import ob4 from "../assets/ob4.jpg";
+import ob5 from "../assets/ob5.jpg";
 import Footer from "../components/Footer/Footer";
+import Nav from "../components/Nav/Nav";
+import {ArrowRightIcon} from "@heroicons/react/24/outline";
 
 const OurBrand = () => {
-  function NavList() {
-    return (
-      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-          onMouseEnter={() => setStatus(false)}
-          // onMouseLeave={() => setStatus(true)}
-        >
-          <a href="#" className=" flex items-center p transition-colors">
-            who we are
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            what we do
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            sustainability
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            investors
-          </a>
-        </Typography>
-      </ul>
-    );
-  }
-
-  function NavList2() {
-    return (
-      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center transition-colors p">
-            careers
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center transition-colors p">
-            newsroom
-          </a>
-        </Typography>
-      </ul>
-    );
-  }
-
-  function NavListMerge() {
-    return (
-      <ul className="my-2 pt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="nav1 p-1 font-medium"
-          onMouseEnter={() => setStatus(false)}
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            who we are
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            what we do
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            sustainability
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center p transition-colors">
-            investors
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center transition-colors p">
-            careers
-          </a>
-        </Typography>
-        <Typography
-          as="li"
-          variant="small"
-          color="white"
-          className="p-1 font-medium"
-        >
-          <a href="#" className="flex items-center transition-colors p">
-            newsroom
-          </a>
-        </Typography>
-      </ul>
-    );
-  }
-
-  const [openNav, setOpenNav] = React.useState(false);
-  const [status, setStatus] = React.useState(true);
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
   return (
-    <>
-      <div className="bg-ob-header-image md:bg-cover bg-auto bg-no-repeat min-h-screen font-suse relative">
-        <div
-          id="hover-sheet1"
-          className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-colors ${
-            status ? "hidden" : "block"
-          } ${status ? "" : "hover:block"}`}
-        >
-          <XMarkIcon
-            className="h-8 absolute right-0 bottom-[40%] cursor-pointer text-white mr-2 z-40"
-            onClick={() => setStatus(true)}
-          />
+    <div className="font-suse">
+      <Nav bgImage="ob-header-image" />
 
-          <div className="nav-content font-suse absolute bottom-[30%] text-center px-6 w-[90%] flex flex-col">
-            <NavLink
-              to={"/core-values"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider p pt-5"
-            >
-              core values
-            </NavLink>
-            <NavLink
-              to={"/our-brand"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider p pt-5"
-            >
-              our brand
-            </NavLink>
-            <NavLink
-              to={"/our-leadership"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider p pt-5"
-            >
-              our leadership
-            </NavLink>
-            <NavLink
-              to={"contact-us"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider p pt-5"
-            >
-              contact us
-            </NavLink>
-          </div>
-        </div>
-
-        <Navbar className="mx-auto max-w-screen-2xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-3 z-20 relative">
-          <div className="flex items-center justify-between text-white">
-            <div className="hidden lg:block">
-              <NavList />
-            </div>
-
-            <div className="md:w-16 w-10 md:h-10 h-5 mr-36">
-              <img src={logo} alt="Siecorp" />
-            </div>
-
-            <div className="hidden lg:block">
-              <NavList2 />
-            </div>
-
-            <IconButton
-              variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-              ripple={false}
-              onClick={() => setOpenNav(!openNav)}
-            >
-              {openNav ? (
-                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-              ) : (
-                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-              )}
-            </IconButton>
-          </div>
-
-          <Collapse open={openNav}>
-            <NavListMerge />
-          </Collapse>
-        </Navbar>
-
-        <div className="w-full bg-white min-h-[55vh] absolute bottom-0">
-          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ob-header-image text-center">
-            our brand
-          </h1>
-          <h5 className="max-w-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-            Whether we’re fueling cars or advancing the energy system of
-            tomorrow, Chevron’s brands set the standard for excellence. With a
-            rich history dating back over a century, Chevron’s family of brands
-            has built trust and recognition worldwide.
-          </h5>
-        </div>
+      <div className="w-full bg-white min-h-[55vh] absolute bottom-0">
+        <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ob-header-image text-center">
+          our brand
+        </h1>
+        <h5 className="max-w-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+          Whether we’re fueling cars or advancing the energy system of tomorrow,
+          Chevron’s brands set the standard for excellence. With a rich history
+          dating back over a century, Chevron’s family of brands has built trust
+          and recognition worldwide.
+        </h5>
       </div>
 
       <div className="py-20">
@@ -328,9 +88,7 @@ const OurBrand = () => {
             in technology set Caltex apart.
           </h4>
           <span className="flex lg:justify-start justify-center py-4">
-            <p className="p tracking-wider">
-              learn more about caltex
-            </p>
+            <p className="p tracking-wider">learn more about caltex</p>
           </span>
           <span className="flex lg:justify-start justify-center">
             <p className="p tracking-wider">find a caltex service station</p>
@@ -342,8 +100,34 @@ const OurBrand = () => {
         </div>
       </div>
 
+      <div className="min-h-screen flex lg:flex-row flex-col-reverse justify-around items-center py-14">
+        <div className="h-[38rem] px-8">
+          <img src={ob4} alt="..." className="h-full w-full rounded-2xl" />
+        </div>
+
+        <div className="text-white max-w-xl px-4 text-center py-4 flex flex-col gap-4">
+          <h1 className="text-[#0066B2] text-6xl font-bold max-w-xs mx-auto">gift and credit cards</h1>
+          <h4 className="text-black text-xl max-w-[480px]">Wherever you’re headed, it pays to have a Chevron card. Feel confident on your travels when you keep our gift cards and personal and business credit cards by your side.</h4>
+          <p className="text-black cursor-pointer transition-colors hover:text-[#0B2D71] font-semibold">explore our gift and credit cards</p>
+        </div>
+      </div>
+
+      <div className="min-h-screen bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8">
+        <h1 className="text-white font-extrabold text-6xl text-center">brand licensing opportunities</h1>
+        <h4 className="text-white max-w-screen-md text-center text-xl">Take your business to the next level by partnering with one of our iconic global brands. In addition to Chevron station franchising, we are looking for visionary partners to license the Texaco® or Caltex® brands in fuels retailing or lubricants in manufacturing, sales, and marketing.</h4>
+
+        <div className="lg:h-96 h-56 px-8">
+          <img src={ob5} alt="..." className="h-full w-full rounded-2xl" />
+        </div>
+
+        <div className="min-h-20 bg-[#0066B2] lg:w-[60vw] w-[95vw] text-center py-10 rounded-2xl my-14">
+          <h2 className="lg:text-5xl text-3xl text-white font-bold">alternative fuel for fleet</h2>
+          <span className="flex justify-center gap-2 items-center py-7"><ArrowRightIcon className="h-5 text-white" /><p className="text-white p font-semibold">we work every day to provide energy</p></span>
+        </div>
+      </div>
+
       <Footer />
-    </>
+    </div>
   );
 };
 
