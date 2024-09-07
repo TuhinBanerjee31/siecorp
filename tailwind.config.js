@@ -19,6 +19,8 @@ module.exports = withMT( {
         'ol-header-image': "url('/src/assets/ol-header.jpg')",
         'e-header-image': "url('/src/assets/e-header.jpg')",
         'm-header-image': "url('/src/assets/m-header.jpg')",
+        'i-header-image': "url('/src/assets/i-header.jpg')",
+        'c-header-image': "url('/src/assets/c-header.jpg')",
       },
       fontFamily: { 
         "suse": ["SUSE", 'system-ui'] 
