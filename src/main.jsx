@@ -10,6 +10,8 @@ import OurBrand from "./pages/OurBrand.jsx";
 import OurLeadership from "./pages/OurLeadership.jsx";
 import Energy from "./pages/Energy.jsx";
 import Maritime from "./pages/Maritime.jsx";
+import Infrastructure from "./pages/Infrastructure.jsx";
+import Careers from "./pages/Careers.jsx"
 
 // const router = createBrowserRouter([
 //   {
@@ -51,6 +53,8 @@ const router = createBrowserRouter(
       <Route path='our-leadership' element={<OurLeadership />} />
       <Route path='energy' element={<Energy />} />
       <Route path='maritime' element={<Maritime />} />
+      <Route path='infrastructure' element={<Infrastructure />} />
+      <Route path='careers' element={<Careers />} />
     </Route>
   )
 );

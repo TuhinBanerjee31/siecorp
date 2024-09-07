@@ -21,7 +21,10 @@ const Nav = (props) => {
           variant="small"
           color="white"
           className="p-1 font-medium"
-          onMouseEnter={() => {setStatus(false); setStatus2(true)}}
+          onMouseEnter={() => {
+            setStatus(false);
+            setStatus2(true);
+          }}
           // onMouseLeave={() => setStatus(true)}
         >
           <a href="#" className=" flex items-center p transition-colors">
@@ -33,7 +36,10 @@ const Nav = (props) => {
           variant="small"
           color="white"
           className="p-1 font-medium"
-          onMouseEnter={() => {setStatus2(false); setStatus(true)}}
+          onMouseEnter={() => {
+            setStatus2(false);
+            setStatus(true);
+          }}
         >
           <a href="#" className="flex items-center p transition-colors">
             what we do
@@ -72,9 +78,12 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink
+            to={"/careers"}
+            className="flex items-center transition-colors p"
+          >
             careers
-          </a>
+          </NavLink>
         </Typography>
         <Typography
           as="li"
@@ -98,7 +107,10 @@ const Nav = (props) => {
           variant="small"
           color="white"
           className="nav1 p-1 font-medium flex"
-          onMouseEnter={() => {setStatus(false); setStatus2(true)}}
+          onMouseEnter={() => {
+            setStatus(false);
+            setStatus2(true);
+          }}
         >
           <a href="#" className="flex items-center p transition-colors">
             who we are
@@ -109,7 +121,10 @@ const Nav = (props) => {
           variant="small"
           color="white"
           className="p-1 font-medium flex"
-          onMouseEnter={() => {setStatus2(false); setStatus(true)}}
+          onMouseEnter={() => {
+            setStatus2(false);
+            setStatus(true);
+          }}
         >
           <a href="#" className="flex items-center p transition-colors">
             what we do
@@ -141,9 +156,12 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium flex"
         >
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink
+            to={"/careers"}
+            className="flex items-center transition-colors p"
+          >
             careers
-          </a>
+          </NavLink>
         </Typography>
         <Typography
           as="li"
@@ -244,7 +262,7 @@ const Nav = (props) => {
             <NavList />
           </div>
 
-          <Link to={'/'} className="md:w-16 w-10 md:h-10 h-5 mr-36">
+          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 mr-36">
             <img src={logo} alt="Siecorp" />
           </Link>
 
@@ -259,7 +277,11 @@ const Nav = (props) => {
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} onClick={() => setStatus(true)} />
+              <XMarkIcon
+                className="h-6 w-6"
+                strokeWidth={2}
+                onClick={() => setStatus(true)}
+              />
             ) : (
               <Bars3Icon className="h-6 w-6" strokeWidth={2} />
             )}
