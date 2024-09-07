@@ -10,7 +10,7 @@ import OurBrand from "./pages/OurBrand.jsx";
 import OurLeadership from "./pages/OurLeadership.jsx";
 import Energy from "./pages/Energy.jsx";
 import Maritime from "./pages/Maritime.jsx";
-import Infrastructure from "./pages/infrastructure.jsx";
+import Infrastructure from "./pages/Infrastructure.jsx";
 import Careers from "./pages/Careers.jsx"
 
 // const router = createBrowserRouter([
