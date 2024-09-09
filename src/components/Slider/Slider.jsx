@@ -16,7 +16,7 @@ const Slider = (props) => {
       loop={true}
       navigation={true}
       modules={[Navigation]}
-      className="mySwiper w-[100%] h-[100%]"
+      className="mySwiper w-[100%]"
     >
       {props.dataSet.map((data) => (
         <SwiperSlide key={data.id} className="flex items-center justify-center ml-auto mr-auto">

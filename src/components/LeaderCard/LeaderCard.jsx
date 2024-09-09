@@ -3,15 +3,20 @@ import React from 'react'
 
 const LeaderCard = (props) => {
   return (
-    <div className="lg:max-w-screen-2xl flex lg:flex-row flex-col lg:items-center mx-auto gap-10 px-3 my-7 shadow-custom">
-        <div className="md:w-[20%] w-[70%] h-full">
-          <img src={props.data.dp} alt="Darren Lee Kai" className="w-full h-full" />
+    <div className={`flex flex-col max-w-screen-xl bg-[${props.data.bgColor}] rounded-lg mx-auto gap-5 my-10`}>
+        {/* TOP CONTENT */}
+        <div className="flex md:flex-row flex-col gap-5 pt-4 pl-4">
+          <img src={props.data.dp} alt="..." className="h-60 w-60 rounded-lg" />
+
+          <div className="md:self-end">
+            <h2 className={`text-5xl font-semibold text-[${props.data.nColor}]`}>{props.data.name}</h2>
+            <h3 className="text-3xl text-white">{props.data.position}</h3>
+          </div>
         </div>
 
-        <div className="lg:w-[70%] w-full p-3">
-          <h2 className="text-2xl font-semibold">{props.data.name}</h2>
-          <h4 className="text-xl font-medium pb-5">{props.data.position}</h4>
-          <p className="md:text-base text-sm tracking-wide">{props.data.desc}</p>
+        {/* BOTTOM CONTENT */}
+        <div>
+          <h5 className="text-white p-4 text-xl tracking-wide">{props.data.desc}</h5>
         </div>
       </div>
   )
