@@ -10,7 +10,7 @@ const LeaderCard = (props) => {
 
           <div className="md:self-end">
             <h2 className={`text-5xl font-semibold text-[${props.data.nColor}]`}>{props.data.name}</h2>
-            <h3 className="text-3xl text-white">{props.data.position}</h3>
+            <h3 className="text-3xl text-white py-2">{props.data.position}</h3>
           </div>
         </div>
 

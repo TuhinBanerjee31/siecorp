@@ -1,4 +1,4 @@
 .blur_sheet {
   background-color: rgba(60, 81, 113, 0.5);
-  backdrop-filter: blur(40px) opacity(1);
+  backdrop-filter: blur(40px) opacity(0.6);
 }
