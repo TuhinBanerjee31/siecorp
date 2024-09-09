@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useEffect } from "react";
 import "./Nav.css";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import {
   Navbar,
   Collapse,
@@ -15,21 +15,24 @@ const Nav = (props) => {
   // NAVBAR-LEFT-CONTENTS
   function NavList() {
     return (
-      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
         <Typography
           as="li"
           variant="small"
           color="white"
           className="p-1 font-medium"
           onMouseEnter={() => {
-            setStatus(false);
-            setStatus2(true);
+            setSubMenu(true);
+            setMenu1(true);
+            setMenu2(false);
+            setrmM1(true);
+            handleMenu2();
           }}
-          // onMouseLeave={() => setStatus(true)}
+          // onMouseLeave={() => setMenu1(true)}
         >
-          <a href="#" className=" flex items-center p transition-colors">
+          <p className=" flex items-center p transition-colors">
             who we are
-          </a>
+          </p>
         </Typography>
         <Typography
           as="li"
@@ -37,13 +40,16 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium"
           onMouseEnter={() => {
-            setStatus2(false);
-            setStatus(true);
+            setSubMenu(true);
+            setMenu1(false);
+            setMenu2(true);
+            setrmM2(true);
+            handleMenu1();
           }}
         >
-          <a href="#" className="flex items-center p transition-colors">
+          <p className="flex items-center p transition-colors">
             what we do
-          </a>
+          </p>
         </Typography>
         <Typography
           as="li"
@@ -51,9 +57,9 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center p transition-colors">
-            sustainability
-          </a>
+          <NavLink to={"/why-us"} className="flex items-center p transition-colors">
+            why us
+          </NavLink>
         </Typography>
         <Typography
           as="li"
@@ -71,7 +77,7 @@ const Nav = (props) => {
   // NAVBAR-RIGHT-CONTENTS
   function NavList2() {
     return (
-      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
         <Typography
           as="li"
           variant="small"
@@ -101,20 +107,23 @@ const Nav = (props) => {
   //HAMBURGER-NAVBAR-CONTENT
   function NavListMerge() {
     return (
-      <ul className="my-2 pt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
         <Typography
           as="li"
           variant="small"
           color="white"
           className="nav1 p-1 font-medium flex"
           onMouseEnter={() => {
-            setStatus(false);
-            setStatus2(true);
+            setSubMenu(true);
+            setMenu1(true);
+            setMenu2(false);
+            setrmM1(true);
+            handleMenu2();
           }}
         >
-          <a href="#" className="flex items-center p transition-colors">
+          <p className="flex items-center p transition-colors">
             who we are
-          </a>
+          </p>
         </Typography>
         <Typography
           as="li"
@@ -122,13 +131,16 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium flex"
           onMouseEnter={() => {
-            setStatus2(false);
-            setStatus(true);
+            setSubMenu(true);
+            setMenu1(false);
+            setMenu2(true);
+            setrmM2(true);
+            handleMenu1();
           }}
         >
-          <a href="#" className="flex items-center p transition-colors">
+          <p className="flex items-center p transition-colors">
             what we do
-          </a>
+          </p>
         </Typography>
         <Typography
           as="li"
@@ -136,9 +148,10 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium flex"
         >
-          <a href="#" className="flex items-center p transition-colors">
-            sustainability
-          </a>
+          <NavLink to={"/why-us"} className="flex items-center p transition-colors">
+            why us
+          </NavLink>
+
         </Typography>
         <Typography
           as="li"
@@ -178,8 +191,24 @@ const Nav = (props) => {
   }
 
   const [openNav, setOpenNav] = React.useState(false);
-  const [status, setStatus] = React.useState(true);
-  const [status2, setStatus2] = React.useState(true);
+  const [subMenu, setSubMenu] = React.useState(false);
+  const [menu1, setMenu1] = React.useState(false);
+  const [menu2, setMenu2] = React.useState(false);
+
+  const [rmM1, setrmM1] = React.useState(false);
+  const [rmM2, setrmM2] = React.useState(false);
+
+  const handleMenu2 = () => {
+    setTimeout(() => {
+      setrmM2(false);
+    }, 2000);
+  };
+
+  const handleMenu1 = () => {
+    setTimeout(() => {
+      setrmM1(false);
+    }, 2000);
+  };
 
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
@@ -197,72 +226,110 @@ const Nav = (props) => {
     >
       <div
         id="hover-sheet1"
-        onMouseLeave={() => setStatus(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status ? "hidden" : "block"
+        onMouseLeave={() => {
+          setSubMenu(false);
+          setMenu1(false);
+          setMenu2(false);
+        }}
+        className={`min-h-screen bg-[#0A3277] lg:w-[50%] w-full absolute z-10 transition-opacity ease-in-out delay-150 duration-500 animate__animated animate__slideInLeft flex flex-col justify-center ${
+          subMenu ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <NavLink
-          to={"/core-values"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider right-10 pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          core values
-        </NavLink>
-        <NavLink
-          to={"/our-brand"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          our brand
-        </NavLink>
-        <NavLink
-          to={"/our-leadership"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          our leadership
-        </NavLink>
-        <NavLink
-          to={"/contact-us"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          contact us
-        </NavLink>
+        {/* SUB MENU 1 */}
+          <div
+            className={`${
+              menu1 ? "opacity-100" : "opacity-0 pointer-events-none"
+            } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+          >
+            <NavLink
+              to={"/core-values"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              core values
+            </NavLink>
+            <NavLink
+              to={"/our-brand"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              our brand
+            </NavLink>
+            <NavLink
+              to={"/our-leadership"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              our leadership
+            </NavLink>
+            <NavLink
+              to={"/contact-us"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              contact us
+            </NavLink>
+          </div>
+        
+
+        {/* SUB MENU 2 */}
+          <div
+            className={`${
+              menu2 ? "opacity-100" : "opacity-0 pointer-events-none"
+            } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+          >
+            <NavLink
+              to={"/infrastructure"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              infrastructure
+            </NavLink>
+            <NavLink
+              to={"/energy"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              energy
+            </NavLink>
+            <NavLink
+              to={"/maritime"}
+              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+            >
+              maritime
+            </NavLink>
+          </div>
       </div>
 
-      <div
+      {/* <div
         id="hover-sheet2"
-        onMouseLeave={() => setStatus2(true)}
+        onMouseLeave={() => setMenu2(true)}
         className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
           status2 ? "hidden" : "block"
         }`}
       >
-        <NavLink
-          to={"/infrastructure"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider right-10 pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          infrastructure
-        </NavLink>
-        <NavLink
-          to={"/energy"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          energy
-        </NavLink>
-        <NavLink
-          to={"/maritime"}
-          className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 ml-36 hover:text-[#0066b2] transition-colors"
-        >
-          maritime
-        </NavLink>
-      </div>
+       
+      </div> */}
 
       {/* NAVBAR */}
-      <Navbar className="mx-auto max-w-screen-2xl bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none py-3 z-20 relative">
+      <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
         <div className="flex items-center justify-between text-white">
           <div className="hidden lg:block">
             <NavList />
           </div>
 
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 mr-36">
+          <IconButton
+            variant="text"
+            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon
+                className="h-7 mt-3"
+                strokeWidth={2}
+                onClick={() => setMenu1(true)}
+              />
+            ) : (
+              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
+            )}
+          </IconButton>
+
+          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
             <img src={logo} alt="Siecorp" />
           </Link>
 
@@ -270,22 +337,10 @@ const Nav = (props) => {
             <NavList2 />
           </div>
 
-          <IconButton
-            variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-6 w-6"
-                strokeWidth={2}
-                onClick={() => setStatus(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-            )}
-          </IconButton>
+          <div className="lg:hidden block">
+            <EnvelopeIcon className="h-6 w-10 mt-3" />
+          </div>
+          
         </div>
 
         <Collapse open={openNav}>

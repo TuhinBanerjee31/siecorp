@@ -12,6 +12,7 @@ import Energy from "./pages/Energy.jsx";
 import Maritime from "./pages/Maritime.jsx";
 import Infrastructure from "./pages/Infrastructure.jsx";
 import Careers from "./pages/Careers.jsx"
+import WhyUs from "./pages/WhyUs.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -55,6 +56,7 @@ const router = createBrowserRouter(
       <Route path='maritime' element={<Maritime />} />
       <Route path='infrastructure' element={<Infrastructure />} />
       <Route path='careers' element={<Careers />} />
+      <Route path='why-us' element={<WhyUs />} />
     </Route>
   )
 );
