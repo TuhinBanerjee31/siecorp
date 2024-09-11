@@ -7,21 +7,29 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <div className="flex flex-col gap-2 items-center">
-              <img src={logo} className="h-28 w-28 me-3" alt="Siecorp Logo" />
-              <span className="text-2xl font-semibold whitespace-nowrap text-white tracking-wider">
-                Siecorp
-              </span>
-              <p className="text-white max-w-[30rem] text-center">
-                Founded in 2010, Singapore Infrastructure and Energy Corporation
-                has emerged as a leader in the global infrastructure and energy
-                sectors. With a legacy built over decades, we have earned a
-                reputation for reliability, trust, and excellence in delivering
-                high-quality projects that meet the dynamic
-                needs of our clients.
-              </p>
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex md:flex-row flex-col gap-2 items-center justify-center">
+                <div className="flex flex-col justify-center items-center">
+                  <img
+                    src={logo}
+                    className="h-28 w-28 me-3"
+                    alt="Siecorp Logo"
+                  />
+                  <span className="text-2xl font-semibold whitespace-nowrap text-white tracking-wider">
+                    Siecorp
+                  </span>
+                </div>
+                <p className="text-white max-w-[30rem] md:text-left text-center">
+                  Founded in 2010, Singapore Infrastructure and Energy
+                  Corporation has emerged as a leader in the global
+                  infrastructure and energy sectors. With a legacy built over
+                  decades, we have earned a reputation for reliability, trust,
+                  and excellence in delivering high-quality projects that meet
+                  the dynamic needs of our clients.
+                </p>
+              </div>
 
-              <div className="flex pt-8 sm:justify-center sm:mt-0">
+              <div className="flex gap-5 pt-3 justify-center sm:mt-0 md:ml-14">
                 <a
                   href="#"
                   className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
@@ -31,28 +39,28 @@ const Footer = () => {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-linkedin"></ion-icon>
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-twitter"></ion-icon>
                   <span className="sr-only">Twitter page</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-instagram"></ion-icon>
                   <span className="sr-only">Instagram account</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-youtube"></ion-icon>
                   <span className="sr-only">Youtube account</span>

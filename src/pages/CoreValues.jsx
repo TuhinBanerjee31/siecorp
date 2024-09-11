@@ -1,5 +1,8 @@
 import React from "react";
 import testImage from "../assets/ct-2.jpg";
+import cv1 from "../assets/cv-1.jpg";
+import cv2 from "../assets/cv-2.jpg";
+import cv3 from "../assets/cv-3.jpg";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 import Slider from "../components/Slider/Slider";
@@ -72,14 +75,15 @@ const CoreValues = () => {
       {/* CARDS CONTAINER */}
       <div className="px-5">
         <div className="min-h-[55vh] bg-[#0B2D71] max-w-screen-xl rounded-xl mx-auto flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
-          <div>
+          <div className="flex flex-col gap-4 justify-center items-center">
             <h2 className="text-[#009DD9] md:text-7xl text-5xl font-semibold">
               Integrity
             </h2>
+            <img src={cv1} alt="..." className="rounded-lg" />
           </div>
 
-          <div className="text-white max-w-screen-md">
-            <h4 className="md:text-2xl text-xl tracking-wide">
+          <div className="text-white max-w-screen-md lg:px-4 px-1 py-3">
+            <h4 className="md:text-2xl text-xl tracking-wider text-center">
               Integrity is the cornerstone of our business. We believe in doing
               the right thing, always. Our commitment to honesty, transparency,
               and ethical practices is unwavering. We build trust with our
@@ -92,14 +96,15 @@ const CoreValues = () => {
         </div>
 
         <div className="min-h-[55vh] bg-[#3A0D36] max-w-screen-xl rounded-xl mx-auto flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
-          <div>
+          <div className="flex flex-col gap-4 justify-center items-center">
             <h2 className="text-[#BA3093] md:text-7xl text-5xl font-semibold">
               Care for Employees
             </h2>
+            <img src={cv2} alt="..." className="rounded-lg" />
           </div>
 
-          <div className="text-white max-w-screen-md">
-            <h4 className="md:text-2xl text-xl tracking-wide">
+          <div className="text-white max-w-screen-md lg:px-4 px-1 py-3">
+            <h4 className="md:text-2xl text-xl tracking-wider text-center">
               Our employees are our greatest asset. We are dedicated to creating
               a supportive and inclusive work environment where everyone can
               thrive. At SIECORP, we invest in the growth and development of our
@@ -113,14 +118,15 @@ const CoreValues = () => {
         </div>
 
         <div className="min-h-[55vh] bg-[#444B0D] max-w-screen-xl rounded-xl mx-auto flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
-          <div>
+          <div className="flex flex-col gap-4 justify-center items-center">
             <h2 className="text-[#B2CC34] md:text-7xl text-5xl font-semibold">
               Teamwork
             </h2>
+            <img src={cv3} alt="..." className="rounded-lg" />
           </div>
 
-          <div className="text-white max-w-screen-md">
-            <h4 className="md:text-2xl text-xl tracking-wide">
+          <div className="text-white max-w-screen-md lg:px-4 px-1 py-3">
+            <h4 className="md:text-2xl text-xl tracking-wider text-center">
               Teamwork is essential to achieving our goals. We value the diverse
               talents and perspectives of our team members and recognize that
               collaboration drives success. At SIECORP, we work together as one

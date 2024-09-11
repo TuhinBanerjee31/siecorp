@@ -34,7 +34,7 @@ const OurBrand = () => {
         />
       </div> */}
 
-      <div className="min-h-screen bg-[#0B2D71] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
+      <div className="bg-[#0B2D71] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
         <div className="text-white max-w-2xl px-4 lg:text-left text-center py-4">
           <h3 className="lg:text-6xl text-4xl text-[#009DD9] font-bold"> Customer Focus</h3>
           <h4 className="lg:text-xl text-lg py-4 tracking-wider">
@@ -53,7 +53,7 @@ const OurBrand = () => {
         </div>
       </div>
 
-      <div className="min-h-screen bg-[#58001C] flex lg:flex-row flex-col justify-around items-center py-14">
+      <div className="bg-[#58001C] flex lg:flex-row flex-col justify-around items-center py-14">
         <div className="h-96">
           <img src={ob2} alt="..." className="h-full w-full rounded-2xl" />
         </div>
@@ -72,7 +72,7 @@ const OurBrand = () => {
         </div>
       </div>
 
-      <div className="min-h-screen bg-[#3A0D36] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
+      <div className="bg-[#3A0D36] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
         <div className="text-white max-w-2xl px-4 lg:text-left text-center py-4">
           <h3 className="lg:text-6xl text-4xl text-[#BA3093] font-bold">Sustainability</h3>
           <h4 className="lg:text-xl text-lg py-4 tracking-wider">

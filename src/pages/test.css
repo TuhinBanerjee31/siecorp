@@ -1,4 +1,4 @@
-.swiper {
+/* .swiper {
     width: 100%;
     height: 100%;
   }
@@ -7,8 +7,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,5 +22,16 @@
   .swiper {
     margin-left: auto;
     margin-right: auto;
+  }
+   */
+
+  .stroke-w {
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke fill;
+  }
+  
+  .stroke-b {
+    -webkit-text-stroke: 2px #0B2D71;
+    paint-order: stroke fill;
   }
   

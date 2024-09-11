@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from "react";
 import "./Nav.css";
-import { Bars3Icon, XMarkIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/outline";
 import {
   Navbar,
   Collapse,
@@ -30,9 +34,7 @@ const Nav = (props) => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className=" flex items-center p transition-colors">
-            who we are
-          </p>
+          <p className=" flex items-center p transition-colors">who we are</p>
         </Typography>
         <Typography
           as="li"
@@ -47,9 +49,7 @@ const Nav = (props) => {
             handleMenu1();
           }}
         >
-          <p className="flex items-center p transition-colors">
-            what we do
-          </p>
+          <p className="flex items-center p transition-colors">what we do</p>
         </Typography>
         <Typography
           as="li"
@@ -57,7 +57,10 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium"
         >
-          <NavLink to={"/why-us"} className="flex items-center p transition-colors">
+          <NavLink
+            to={"/why-us"}
+            className="flex items-center p transition-colors"
+          >
             why us
           </NavLink>
         </Typography>
@@ -67,9 +70,12 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center p transition-colors">
-            investors
-          </a>
+          <NavLink
+            to={"/projects"}
+            className="flex items-center p transition-colors"
+          >
+            projects
+          </NavLink>
         </Typography>
       </ul>
     );
@@ -121,9 +127,7 @@ const Nav = (props) => {
             handleMenu2();
           }}
         >
-          <p className="flex items-center p transition-colors">
-            who we are
-          </p>
+          <p className="flex items-center p transition-colors">who we are</p>
         </Typography>
         <Typography
           as="li"
@@ -138,9 +142,7 @@ const Nav = (props) => {
             handleMenu1();
           }}
         >
-          <p className="flex items-center p transition-colors">
-            what we do
-          </p>
+          <p className="flex items-center p transition-colors">what we do</p>
         </Typography>
         <Typography
           as="li"
@@ -148,10 +150,12 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium flex"
         >
-          <NavLink to={"/why-us"} className="flex items-center p transition-colors">
+          <NavLink
+            to={"/why-us"}
+            className="flex items-center p transition-colors"
+          >
             why us
           </NavLink>
-
         </Typography>
         <Typography
           as="li"
@@ -159,9 +163,12 @@ const Nav = (props) => {
           color="white"
           className="p-1 font-medium flex"
         >
-          <a href="#" className="flex items-center p transition-colors">
-            investors
-          </a>
+          <NavLink
+            to={"/projects"}
+            className="flex items-center p transition-colors"
+          >
+            projects
+          </NavLink>
         </Typography>
         <Typography
           as="li"
@@ -236,63 +243,62 @@ const Nav = (props) => {
         }`}
       >
         {/* SUB MENU 1 */}
-          <div
-            className={`${
-              menu1 ? "opacity-100" : "opacity-0 pointer-events-none"
-            } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+        <div
+          className={`${
+            menu1 ? "opacity-100" : "opacity-0 pointer-events-none"
+          } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+        >
+          <NavLink
+            to={"/core-values"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            <NavLink
-              to={"/core-values"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              core values
-            </NavLink>
-            <NavLink
-              to={"/our-brand"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              our brand
-            </NavLink>
-            <NavLink
-              to={"/our-leadership"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              our leadership
-            </NavLink>
-            <NavLink
-              to={"/contact-us"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              contact us
-            </NavLink>
-          </div>
-        
+            core values
+          </NavLink>
+          <NavLink
+            to={"/our-brand"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+          >
+            our brand
+          </NavLink>
+          <NavLink
+            to={"/our-leadership"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+          >
+            our leadership
+          </NavLink>
+          <NavLink
+            to={"/contact-us"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+          >
+            contact us
+          </NavLink>
+        </div>
 
         {/* SUB MENU 2 */}
-          <div
-            className={`${
-              menu2 ? "opacity-100" : "opacity-0 pointer-events-none"
-            } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+        <div
+          className={`${
+            menu2 ? "opacity-100" : "opacity-0 pointer-events-none"
+          } transition-opacity ease-in-out delay-150 duration-500 flex flex-col absolute left-[25%] gap-5`}
+        >
+          <NavLink
+            to={"/infrastructure"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            <NavLink
-              to={"/infrastructure"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              infrastructure
-            </NavLink>
-            <NavLink
-              to={"/energy"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              energy
-            </NavLink>
-            <NavLink
-              to={"/maritime"}
-              className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
-            >
-              maritime
-            </NavLink>
-          </div>
+            infrastructure
+          </NavLink>
+          <NavLink
+            to={"/energy"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+          >
+            energy
+          </NavLink>
+          <NavLink
+            to={"/maritime"}
+            className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
+          >
+            maritime
+          </NavLink>
+        </div>
       </div>
 
       {/* <div
@@ -340,7 +346,6 @@ const Nav = (props) => {
           <div className="lg:hidden block">
             <EnvelopeIcon className="h-6 w-10 mt-3" />
           </div>
-          
         </div>
 
         <Collapse open={openNav}>
