@@ -17,23 +17,25 @@ import m2 from "../assets/m-2.jpg";
 import m3 from "../assets/m-3.jpg";
 import m4 from "../assets/m-4.jpg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import NewsSlider from "../components/NewsSlider/NewsSlider"
+import NewsSlider from "../components/NewsSlider/NewsSlider";
 import Footer from "../components/Footer/Footer";
 
 const Maritime = () => {
   return (
     <div className="font-suse">
-      <Nav bgImage="m-header-image" />
+      <div className="relative">
+        <Nav bgImage="m-header-image" />
 
-      {/* TRANSPARENT HEADER TEXT */}
-      <div className="w-full bg-white absolute bottom-0">
-        <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-m-header-image text-center">
-          maritime
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-          Accelerating progress to power our world today and build the lower
-          carbon energy system of the future.
-        </h5>
+        {/* TRANSPARENT HEADER TEXT */}
+        <div className="w-full bg-white absolute bottom-0">
+          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-m-header-image text-center">
+            maritime
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            Accelerating progress to power our world today and build the lower
+            carbon energy system of the future.
+          </h5>
+        </div>
       </div>
 
       {/* IMAGE COLLAGE CONTAINER */}

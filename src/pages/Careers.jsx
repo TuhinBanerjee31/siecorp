@@ -10,17 +10,19 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 const Careers = () => {
   return (
     <div>
-      <Nav bgImage="c-header-image" />
+      <div className="relative">
+        <Nav bgImage="c-header-image" />
 
-      {/* TRANSPARENT HEADER TEXT */}
-      <div className="w-full bg-white absolute bottom-0 pb-8">
-        <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-c-header-image text-center">
-          careers
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
-          Team members of all experience levels tackle global, real world
-          problems facing our business.
-        </h5>
+        {/* TRANSPARENT HEADER TEXT */}
+        <div className="w-full bg-white absolute bottom-0 pb-8">
+          <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-c-header-image text-center">
+            careers
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
+            Team members of all experience levels tackle global, real world
+            problems facing our business.
+          </h5>
+        </div>
       </div>
 
       <div className="min-h-screen bg-[#F4F4F4]">

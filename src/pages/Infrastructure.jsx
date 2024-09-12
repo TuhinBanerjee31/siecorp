@@ -20,20 +20,22 @@ import Footer from "../components/Footer/Footer";
 const Infrastructure = () => {
   return (
     <div className="font-suse">
-      <Nav bgImage="i-header-image" />
+      <div className="relative">
+        <Nav bgImage="i-header-image" />
 
-      {/* TRANSPARENT HEADER TEXT */}
-      <div className="w-full bg-white absolute bottom-0 pb-8">
-        <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-i-header-image text-center">
-          infrastructure
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
-          Our company has a long, robust history that began when a group of
-          explorers and merchants established the Pacific Coast Oil Co. on
-          September 10, 1879. Since then, our company’s name has changed more
-          than once, but we’ve always retained our founders’ spirit, grit,
-          innovation and perseverance.
-        </h5>
+        {/* TRANSPARENT HEADER TEXT */}
+        <div className="w-full bg-white absolute bottom-0 pb-8">
+          <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-i-header-image text-center">
+            infrastructure
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
+            Our company has a long, robust history that began when a group of
+            explorers and merchants established the Pacific Coast Oil Co. on
+            September 10, 1879. Since then, our company’s name has changed more
+            than once, but we’ve always retained our founders’ spirit, grit,
+            innovation and perseverance.
+          </h5>
+        </div>
       </div>
 
       <div className="min-h-screen bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8">

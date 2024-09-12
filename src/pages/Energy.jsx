@@ -18,16 +18,18 @@ const Energy = () => {
   };
   return (
     <div className="font-suse">
-      <Nav bgImage="e-header-image" />
+      <div className="relative">
+        <Nav bgImage="e-header-image" />
 
-      <div className="w-full bg-white pb-24 absolute bottom-0">
-        <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-e-header-image text-center">
-          energy solutions
-        </h1>
-        <h5 className="max-w-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-          Affordable, reliable and ever-cleaner energy for today and tomorrow.
-          That’s what we’re working towards, every day.
-        </h5>
+        <div className="w-full bg-white pb-24 absolute bottom-0">
+          <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-e-header-image text-center">
+            energy solutions
+          </h1>
+          <h5 className="max-w-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            Affordable, reliable and ever-cleaner energy for today and tomorrow.
+            That’s what we’re working towards, every day.
+          </h5>
+        </div>
       </div>
 
       <div className="flex max-w-screen-2xl mx-auto flex-col md:flex-row items-stretch bg-white p-6">

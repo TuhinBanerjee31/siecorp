@@ -26,7 +26,7 @@ const OurLeadership = () => {
       dp: benjamin,
       name: "Benjamin Tan Wei",
       bgColor: "#003653",
-      nColor:"#00B2BD",
+      nColor: "#00B2BD",
       position: "Chief Executive Officer",
       desc: "Benjamin Tan Wei Jie is the dynamic CEO of Singapore Infrastructure and Energy Corporation (SIECORP), where he leads the company in pioneering sustainable infrastructure and energy initiatives across Singapore and the region. With a wealth of experience in both the energy sector and corporate leadership, Benjamin is renowned for his strategic acumen and innovative approach to business. His vision has been instrumental in steering SIECORP toward groundbreaking projects that align with Singapore's ambitious sustainability goals. Under his leadership, SIECORP continues to thrive as a key player in the global push for green energy and resilient infrastructure.",
     },
@@ -35,7 +35,7 @@ const OurLeadership = () => {
       dp: samuel,
       name: "Samuel Ong",
       bgColor: "#58001C",
-      nColor:"#E21836",
+      nColor: "#E21836",
       position: "Chief Financial Officer",
       desc: " Samuel Ong Kai Xiang serves as the Chief Financial Officer (CFO) of Singapore Infrastructure and Energy Corporation (SIECORP). With a robust background in finance and strategic management, Samuel oversees the financial health and sustainability of the corporation, ensuring that SIECORP remains fiscally strong while pursuing its ambitious projects. His expertise in financial planning, risk management, and investment strategy has been crucial in supporting the company's growth and its mission to drive sustainable infrastructure and energy solutions in Singapore. Samuel is known for his meticulous approach and commitment to financial excellence, playing a vital role in SIECORP's success.",
     },
@@ -44,7 +44,7 @@ const OurLeadership = () => {
       dp: ethan,
       name: "Ethan Ming",
       bgColor: "#0B2D71",
-      nColor:"#009DD9",
+      nColor: "#009DD9",
       position: "Chief Operating Officer",
       desc: "Ethan Tan Yu Ming is the Chief Operating Officer (COO) of Singapore Infrastructure and Energy Corporation (SIECORP). With extensive experience in operational management and a deep understanding of the infrastructure and energy sectors, Ethan is responsible for ensuring the seamless execution of SIECORP’s projects. His leadership is marked by a focus on efficiency, innovation, and sustainability, driving the company’s operational excellence. Ethan's strategic oversight and ability to optimize resources have been instrumental in advancing SIECORP’s mission to deliver cutting-edge infrastructure and energy solutions. He is highly regarded for his hands-on approach and commitment to operational success.",
     },
@@ -53,7 +53,7 @@ const OurLeadership = () => {
       dp: marcus,
       name: "Marcus Wright",
       bgColor: "#444B0D",
-      nColor:"#B2CC34",
+      nColor: "#B2CC34",
       position: "Chief Technology Officer",
       desc: "Marcus Wright is the CEO of Singapore Infrastructure and Energy Corporation (SIECORP), where he leads the company's strategic direction and oversees its operations in the rapidly evolving infrastructure and energy sectors. With a strong background in engineering and executive leadership, Marcus has a proven track record of driving innovation and growth. His vision for SIECORP focuses on sustainable development and cutting-edge technology, positioning the company as a leader in the global shift towards greener energy solutions. Marcus is known for his forward-thinking approach, dedication to excellence, and commitment to making a positive impact on Singapore's infrastructure landscape.",
     },
@@ -71,7 +71,7 @@ const OurLeadership = () => {
       dp: amelia,
       name: "Amelia Rossi",
       bgColor: "#003653",
-      nColor:"#00B2BD",
+      nColor: "#00B2BD",
       position: "Central Statistical Office",
       desc: "Amelia Rossi is the Chief Sustainability Officer (CSO) at Singapore Infrastructure and Energy Corporation (SIECORP). With a deep passion for environmental stewardship and a solid background in sustainability, Amelia leads SIECORP's efforts to integrate sustainable practices across all operations and projects. She is responsible for developing and implementing strategies that minimize the company's environmental impact while driving innovation in green energy and infrastructure. Amelia's leadership is key to advancing SIECORP’s commitment to sustainable development, ensuring that the company not only meets but exceeds global sustainability standards. Her vision and expertise make her a pivotal figure in SIECORP’s journey toward a more sustainable future. ",
     },
@@ -79,18 +79,20 @@ const OurLeadership = () => {
 
   return (
     <div className="font-suse">
-      <Nav bgImage="ol-header-image" />
+      <div className="relative">
+        <Nav bgImage="ol-header-image" />
 
-      {/* NAV title */}
-      <div className="w-full bg-white absolute bottom-0 flex flex-col justify-center items-center pb-10">
-        <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ol-header-image text-center">
-          Our Leadership
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-          Our culture is built upon the principles of responsibility, trust and
-          integrity. Our leadership is a profound source of pride, as we lead in
-          the future of energy.
-        </h5>
+        {/* NAV title */}
+        <div className="w-full bg-white absolute bottom-0 flex flex-col justify-center items-center pb-10">
+          <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ol-header-image text-center">
+            Our Leadership
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            Our culture is built upon the principles of responsibility, trust
+            and integrity. Our leadership is a profound source of pride, as we
+            lead in the future of energy.
+          </h5>
+        </div>
       </div>
 
       <div className="pb-10 text-center px-4">
@@ -112,9 +114,7 @@ const OurLeadership = () => {
         </h4>
       </div>
 
-      <div className="px-5">
-      
-      </div>
+      <div className="px-5"></div>
 
       {leadersData.map((data) => (
         <div key={data.id} className="px-5">
