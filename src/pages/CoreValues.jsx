@@ -58,20 +58,23 @@ const CoreValues = () => {
 
   return (
     <div className="min-h-screen text-black font-suse">
-      <Nav bgImage="cv-header-image" />
+      <div className="relative">
+        <Nav bgImage="cv-header-image" />
 
-      {/* TRANSPARENT HEADER */}
-      <div className="w-full bg-white absolute bottom-0 pb-8">
-        <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-cv-header-image text-center">
-          Core Values
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-xl text-lg tracking-wider text-center px-5">
-          At SIECORP, our core values underpin all that we do, guiding our
-          actions, shaping our culture, and defining our interactions with
-          clients, partners, and colleagues. These values are more than just
-          statements; they are integral principles that we embody daily, driving
-          us to achieve exceptional results and advance the industries we serve.
-        </h5>
+        {/* TRANSPARENT HEADER */}
+        <div className="w-full bg-white absolute bottom-0 pb-8">
+          <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-cv-header-image text-center">
+            Core Values
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-xl text-lg tracking-wider text-center px-5">
+            At SIECORP, our core values underpin all that we do, guiding our
+            actions, shaping our culture, and defining our interactions with
+            clients, partners, and colleagues. These values are more than just
+            statements; they are integral principles that we embody daily,
+            driving us to achieve exceptional results and advance the industries
+            we serve.
+          </h5>
+        </div>
       </div>
 
       {/* CARDS CONTAINER */}

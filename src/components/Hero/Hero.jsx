@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Nav from "../Nav/Nav";
+import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import "./Hero.css";
 import { Carousel } from "@material-tailwind/react";
@@ -13,70 +12,6 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/siecorp_logo.png";
 
 const Nav1 = () => {
-  // NAVBAR-LEFT-CONTENTS
-  // function NavList() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //         // onMouseLeave={() => setMenu1(true)}
-  //       >
-  //         <p className=" flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavLeft() {
     return (
@@ -87,8 +22,6 @@ const Nav1 = () => {
             setSubMenu(true);
             setMenu1(true);
             setMenu2(false);
-            setrmM1(true);
-            handleMenu2();
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
@@ -101,8 +34,6 @@ const Nav1 = () => {
             setSubMenu(true);
             setMenu1(false);
             setMenu2(true);
-            setrmM2(true);
-            handleMenu1();
           }}
         >
           <p className="flex items-center p transition-colors">what we do</p>
@@ -126,36 +57,6 @@ const Nav1 = () => {
       </ul>
     );
   }
-  // NAVBAR-RIGHT-CONTENTS
-  // function NavList2() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavRight() {
     return (
@@ -176,92 +77,6 @@ const Nav1 = () => {
       </ul>
     );
   }
-  //HAMBURGER-NAVBAR-CONTENT
-  // function NavListMerge() {
-  //   return (
-  //     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="nav1 p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavHam() {
     return (
@@ -273,8 +88,6 @@ const Nav1 = () => {
               setSubMenu(true);
               setMenu1(true);
               setMenu2(false);
-              setrmM1(true);
-              handleMenu2();
             }}
           >
             who we are
@@ -287,8 +100,6 @@ const Nav1 = () => {
               setSubMenu(true);
               setMenu1(false);
               setMenu2(true);
-              setrmM2(true);
-              handleMenu1();
             }}
           >
             what we do
@@ -327,37 +138,10 @@ const Nav1 = () => {
     );
   }
 
-  const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
   const [menu1, setMenu1] = React.useState(false);
   const [menu2, setMenu2] = React.useState(false);
-
-  const [rmM1, setrmM1] = React.useState(false);
-  const [rmM2, setrmM2] = React.useState(false);
-
-  const handleMenu2 = () => {
-    setTimeout(() => {
-      setrmM2(false);
-    }, 2000);
-  };
-
-  const handleMenu1 = () => {
-    setTimeout(() => {
-      setrmM1(false);
-    }, 2000);
-  };
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
   return (
     <div
       className={`header bg-card1-image bg-cover bg-no-repeat min-h-screen font-suse`}
@@ -458,61 +242,6 @@ const Nav1 = () => {
         <NavHam />
       </div>
 
-      {/* <div
-        id="hover-sheet2"
-        onMouseLeave={() => setMenu2(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status2 ? "hidden" : "block"
-        }`}
-      >
-       
-      </div> */}
-
-      {/* NAVBAR */}
-      {/* <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
-        <div className="flex items-center justify-between text-white">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-
-          <IconButton
-            variant="text"
-            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-7 mt-3"
-                strokeWidth={2}
-                onClick={() => setMenu1(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
-            )}
-          </IconButton>
-
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
-            <img src={logo} alt="Siecorp" />
-          </Link>
-
-          <div className="hidden lg:block">
-            <NavList2 />
-          </div>
-
-          <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3" />
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <NavListMerge />
-        </Collapse>
-      </Navbar> */}
-
-      {/* HAM-MENU */}
-      {/* {hamMenu && (<div className={`min-h-screen absolute z-50 bg-[#0A3277]`}></div>)} */}
-
       <nav className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative px-4">
         <div className="flex items-center justify-between text-white">
           <div className="lg:block hidden">
@@ -546,73 +275,9 @@ const Nav1 = () => {
       </nav>
     </div>
   );
-};
+}
 
 const Nav2 = () => {
-  // NAVBAR-LEFT-CONTENTS
-  // function NavList() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //         // onMouseLeave={() => setMenu1(true)}
-  //       >
-  //         <p className=" flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavLeft() {
     return (
@@ -623,8 +288,6 @@ const Nav2 = () => {
             setSubMenu(true);
             setMenu1(true);
             setMenu2(false);
-            setrmM1(true);
-            handleMenu2();
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
@@ -637,8 +300,6 @@ const Nav2 = () => {
             setSubMenu(true);
             setMenu1(false);
             setMenu2(true);
-            setrmM2(true);
-            handleMenu1();
           }}
         >
           <p className="flex items-center p transition-colors">what we do</p>
@@ -662,36 +323,6 @@ const Nav2 = () => {
       </ul>
     );
   }
-  // NAVBAR-RIGHT-CONTENTS
-  // function NavList2() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavRight() {
     return (
@@ -712,92 +343,6 @@ const Nav2 = () => {
       </ul>
     );
   }
-  //HAMBURGER-NAVBAR-CONTENT
-  // function NavListMerge() {
-  //   return (
-  //     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="nav1 p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavHam() {
     return (
@@ -809,8 +354,6 @@ const Nav2 = () => {
               setSubMenu(true);
               setMenu1(true);
               setMenu2(false);
-              setrmM1(true);
-              handleMenu2();
             }}
           >
             who we are
@@ -823,8 +366,6 @@ const Nav2 = () => {
               setSubMenu(true);
               setMenu1(false);
               setMenu2(true);
-              setrmM2(true);
-              handleMenu1();
             }}
           >
             what we do
@@ -863,37 +404,10 @@ const Nav2 = () => {
     );
   }
 
-  const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
   const [menu1, setMenu1] = React.useState(false);
   const [menu2, setMenu2] = React.useState(false);
-
-  const [rmM1, setrmM1] = React.useState(false);
-  const [rmM2, setrmM2] = React.useState(false);
-
-  const handleMenu2 = () => {
-    setTimeout(() => {
-      setrmM2(false);
-    }, 2000);
-  };
-
-  const handleMenu1 = () => {
-    setTimeout(() => {
-      setrmM1(false);
-    }, 2000);
-  };
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
   return (
     <div
       className={`header bg-card2-image bg-cover bg-no-repeat min-h-screen font-suse`}
@@ -994,61 +508,6 @@ const Nav2 = () => {
         <NavHam />
       </div>
 
-      {/* <div
-        id="hover-sheet2"
-        onMouseLeave={() => setMenu2(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status2 ? "hidden" : "block"
-        }`}
-      >
-       
-      </div> */}
-
-      {/* NAVBAR */}
-      {/* <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
-        <div className="flex items-center justify-between text-white">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-
-          <IconButton
-            variant="text"
-            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-7 mt-3"
-                strokeWidth={2}
-                onClick={() => setMenu1(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
-            )}
-          </IconButton>
-
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
-            <img src={logo} alt="Siecorp" />
-          </Link>
-
-          <div className="hidden lg:block">
-            <NavList2 />
-          </div>
-
-          <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3" />
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <NavListMerge />
-        </Collapse>
-      </Navbar> */}
-
-      {/* HAM-MENU */}
-      {/* {hamMenu && (<div className={`min-h-screen absolute z-50 bg-[#0A3277]`}></div>)} */}
-
       <nav className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative px-4">
         <div className="flex items-center justify-between text-white">
           <div className="lg:block hidden">
@@ -1085,70 +544,6 @@ const Nav2 = () => {
 }
 
 const Nav3 = () => {
-  // NAVBAR-LEFT-CONTENTS
-  // function NavList() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //         // onMouseLeave={() => setMenu1(true)}
-  //       >
-  //         <p className=" flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavLeft() {
     return (
@@ -1159,8 +554,6 @@ const Nav3 = () => {
             setSubMenu(true);
             setMenu1(true);
             setMenu2(false);
-            setrmM1(true);
-            handleMenu2();
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
@@ -1173,8 +566,6 @@ const Nav3 = () => {
             setSubMenu(true);
             setMenu1(false);
             setMenu2(true);
-            setrmM2(true);
-            handleMenu1();
           }}
         >
           <p className="flex items-center p transition-colors">what we do</p>
@@ -1198,36 +589,6 @@ const Nav3 = () => {
       </ul>
     );
   }
-  // NAVBAR-RIGHT-CONTENTS
-  // function NavList2() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavRight() {
     return (
@@ -1248,92 +609,6 @@ const Nav3 = () => {
       </ul>
     );
   }
-  //HAMBURGER-NAVBAR-CONTENT
-  // function NavListMerge() {
-  //   return (
-  //     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="nav1 p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavHam() {
     return (
@@ -1345,8 +620,6 @@ const Nav3 = () => {
               setSubMenu(true);
               setMenu1(true);
               setMenu2(false);
-              setrmM1(true);
-              handleMenu2();
             }}
           >
             who we are
@@ -1359,8 +632,6 @@ const Nav3 = () => {
               setSubMenu(true);
               setMenu1(false);
               setMenu2(true);
-              setrmM2(true);
-              handleMenu1();
             }}
           >
             what we do
@@ -1399,37 +670,10 @@ const Nav3 = () => {
     );
   }
 
-  const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
   const [menu1, setMenu1] = React.useState(false);
   const [menu2, setMenu2] = React.useState(false);
-
-  const [rmM1, setrmM1] = React.useState(false);
-  const [rmM2, setrmM2] = React.useState(false);
-
-  const handleMenu2 = () => {
-    setTimeout(() => {
-      setrmM2(false);
-    }, 2000);
-  };
-
-  const handleMenu1 = () => {
-    setTimeout(() => {
-      setrmM1(false);
-    }, 2000);
-  };
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
   return (
     <div
       className={`header bg-card3-image bg-cover bg-no-repeat min-h-screen font-suse`}
@@ -1530,61 +774,6 @@ const Nav3 = () => {
         <NavHam />
       </div>
 
-      {/* <div
-        id="hover-sheet2"
-        onMouseLeave={() => setMenu2(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status2 ? "hidden" : "block"
-        }`}
-      >
-       
-      </div> */}
-
-      {/* NAVBAR */}
-      {/* <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
-        <div className="flex items-center justify-between text-white">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-
-          <IconButton
-            variant="text"
-            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-7 mt-3"
-                strokeWidth={2}
-                onClick={() => setMenu1(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
-            )}
-          </IconButton>
-
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
-            <img src={logo} alt="Siecorp" />
-          </Link>
-
-          <div className="hidden lg:block">
-            <NavList2 />
-          </div>
-
-          <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3" />
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <NavListMerge />
-        </Collapse>
-      </Navbar> */}
-
-      {/* HAM-MENU */}
-      {/* {hamMenu && (<div className={`min-h-screen absolute z-50 bg-[#0A3277]`}></div>)} */}
-
       <nav className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative px-4">
         <div className="flex items-center justify-between text-white">
           <div className="lg:block hidden">
@@ -1618,73 +807,9 @@ const Nav3 = () => {
       </nav>
     </div>
   );
-};
+}
 
 const Nav4 = () => {
-  // NAVBAR-LEFT-CONTENTS
-  // function NavList() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //         // onMouseLeave={() => setMenu1(true)}
-  //       >
-  //         <p className=" flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavLeft() {
     return (
@@ -1695,8 +820,6 @@ const Nav4 = () => {
             setSubMenu(true);
             setMenu1(true);
             setMenu2(false);
-            setrmM1(true);
-            handleMenu2();
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
@@ -1709,8 +832,6 @@ const Nav4 = () => {
             setSubMenu(true);
             setMenu1(false);
             setMenu2(true);
-            setrmM2(true);
-            handleMenu1();
           }}
         >
           <p className="flex items-center p transition-colors">what we do</p>
@@ -1734,36 +855,6 @@ const Nav4 = () => {
       </ul>
     );
   }
-  // NAVBAR-RIGHT-CONTENTS
-  // function NavList2() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavRight() {
     return (
@@ -1784,92 +875,6 @@ const Nav4 = () => {
       </ul>
     );
   }
-  //HAMBURGER-NAVBAR-CONTENT
-  // function NavListMerge() {
-  //   return (
-  //     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="nav1 p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavHam() {
     return (
@@ -1881,8 +886,6 @@ const Nav4 = () => {
               setSubMenu(true);
               setMenu1(true);
               setMenu2(false);
-              setrmM1(true);
-              handleMenu2();
             }}
           >
             who we are
@@ -1895,8 +898,6 @@ const Nav4 = () => {
               setSubMenu(true);
               setMenu1(false);
               setMenu2(true);
-              setrmM2(true);
-              handleMenu1();
             }}
           >
             what we do
@@ -1935,37 +936,10 @@ const Nav4 = () => {
     );
   }
 
-  const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
   const [menu1, setMenu1] = React.useState(false);
   const [menu2, setMenu2] = React.useState(false);
-
-  const [rmM1, setrmM1] = React.useState(false);
-  const [rmM2, setrmM2] = React.useState(false);
-
-  const handleMenu2 = () => {
-    setTimeout(() => {
-      setrmM2(false);
-    }, 2000);
-  };
-
-  const handleMenu1 = () => {
-    setTimeout(() => {
-      setrmM1(false);
-    }, 2000);
-  };
-
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
   return (
     <div
       className={`header bg-card4-image bg-cover bg-no-repeat min-h-screen font-suse`}
@@ -2065,61 +1039,6 @@ const Nav4 = () => {
         </span>
         <NavHam />
       </div>
-
-      {/* <div
-        id="hover-sheet2"
-        onMouseLeave={() => setMenu2(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status2 ? "hidden" : "block"
-        }`}
-      >
-       
-      </div> */}
-
-      {/* NAVBAR */}
-      {/* <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
-        <div className="flex items-center justify-between text-white">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-
-          <IconButton
-            variant="text"
-            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-7 mt-3"
-                strokeWidth={2}
-                onClick={() => setMenu1(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
-            )}
-          </IconButton>
-
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
-            <img src={logo} alt="Siecorp" />
-          </Link>
-
-          <div className="hidden lg:block">
-            <NavList2 />
-          </div>
-
-          <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3" />
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <NavListMerge />
-        </Collapse>
-      </Navbar> */}
-
-      {/* HAM-MENU */}
-      {/* {hamMenu && (<div className={`min-h-screen absolute z-50 bg-[#0A3277]`}></div>)} */}
 
       <nav className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative px-4">
         <div className="flex items-center justify-between text-white">
