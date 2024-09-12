@@ -12,7 +12,7 @@ import {
 import i1 from "../assets/i-1.jpg";
 import i2 from "../assets/i-2.jpg";
 import i3 from "../assets/i-3.jpg";
-import ct6 from "../assets/ct-6.jpg";
+// import ct6 from "../assets/ct-6.jpg";
 import m2 from "../assets/m-2.jpg";
 import s2 from "../assets/slide2.jpg";
 import Footer from "../components/Footer/Footer";
@@ -109,7 +109,7 @@ const Infrastructure = () => {
           <div className="w-full h-64">
             <img
               className="w-full h-full object-cover rounded-lg"
-              src={ct6}
+              src=""
               alt="Building Image 2"
             />
           </div>

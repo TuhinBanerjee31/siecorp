@@ -14,7 +14,7 @@ import slide6 from '../../assets/slide6.jpg'
 
 const NewsSlider = (props) => {
   return (
-    <div className="min-h-screen font-suse overflow-hidden">
+    <div className="font-suse overflow-hidden">
       <div className="container py-20 flex md:flex-row flex-col justify-around items-center mx-auto">
         <div className="titles py-10">
           <h5 className="text-[#0B2D71] text-2xl py-2">newsroom</h5>
@@ -23,7 +23,7 @@ const NewsSlider = (props) => {
           </h2>
         </div>
 
-        <div className="swiper-container md:w-96 w-60 h-60 md:h-96">
+        <div className="swiper-container md:w-96 w-60">
           <Swiper
             effect={"cards"}
             grabCursor={true}
