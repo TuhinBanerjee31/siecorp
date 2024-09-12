@@ -1,5 +1,5 @@
 import React from "react";
-import cardImage from "../../assets/card-image.jpg";
+import extraCardImage from "../../assets/extraCardImage.jpg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const Extra = () => {
@@ -10,23 +10,44 @@ const Extra = () => {
       </h1>
 
       <div className="info-card min-h-96 max-w-screen-2xl bg-[#009DD9] mx-auto mt-10 relative rounded-md z-10 flex md:flex-row flex-col-reverse md:px-16 px-4 py-12 items-center">
-        <div className="content-left">
-          <h2 className="md:text-7xl text-4xl font-bold text-[#0B2D71] md:max-w-[90%] py-10">
-            carbon capture and storage
-          </h2>
-          <h5 className="md:text-2xl text-white md:max-w-[90%]">
-            We’re targeting 25 million tonnes of CO2 per year in offsets
-            business and CCUS by the end of this decade. Captured carbon
-            emissions are safely stored several thousand feet below ground.
-          </h5>
-          <div className="bg-transparent hover:bg-[#0B2D71] text-white font-semibold hover:text-white my-10 py-2 px-1 border border-white hover:border-transparent rounded flex justify-center items-center max-w-72 gap-3 cursor-pointer">
-            <ArrowRightIcon className="h-5 w-5" />
-            <p className="p">learn more about us</p>
+        <div className="content-left flex flex-col gap-5">
+          <div>
+            <h2 className="md:text-7xl text-4xl font-bold text-[#0B2D71] md:max-w-[90%] py-5">
+              Our Core Values
+            </h2>
+            <h5 className="md:text-2xl text-[#0B2D71] md:max-w-[90%] font-semibold border-b-4 rounded-b-md border-[#0B2D71]">
+              Explore the principles that drive our commitment to excellence,
+              integrity, and innovation.
+            </h5>
+          </div>
+
+          <div>
+            <h2 className="md:text-7xl text-4xl font-bold text-[#0B2D71] md:max-w-[90%] py-5">
+              Our Brand
+            </h2>
+            <h5 className="md:text-2xl text-[#0B2D71] md:max-w-[90%] font-semibold border-b-4 rounded-b-md border-[#0B2D71]">
+              Learn how our values, vision, and commitment shape the essence of
+              who we are.
+            </h5>
+          </div>
+
+          <div>
+            <h2 className="md:text-7xl text-4xl font-bold text-[#0B2D71] md:max-w-[90%] py-5">
+              Our Leadership
+            </h2>
+            <h5 className="md:text-2xl text-[#0B2D71] md:max-w-[90%] font-semibold border-b-4 rounded-b-md border-[#0B2D71]">
+              Get to know the visionaries guiding our company with expertise and
+              dedication.
+            </h5>
           </div>
         </div>
 
-        <div className="content-right w-3/5">
-          <img src={cardImage} alt="card-image" className="md:h-auto h-auto w-full" />
+        <div className="content-right w-[80%]">
+          <img
+            src={extraCardImage}
+            alt="card-image"
+            className="h-auto w-full rounded-xl"
+          />
         </div>
       </div>
     </div>
