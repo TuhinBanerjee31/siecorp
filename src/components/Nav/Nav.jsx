@@ -15,7 +15,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/siecorp_logo.png";
 
-const Nav = (props) => {
+const Nav = ({bgImage}) => {
   // NAVBAR-LEFT-CONTENTS
   // function NavList() {
   //   return (
@@ -330,6 +330,7 @@ const Nav = (props) => {
     );
   }
 
+  console.log(bgImage)
   const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
@@ -363,7 +364,7 @@ const Nav = (props) => {
   }, []);
   return (
     <div
-      className={`header bg-${props.bgImage} bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-${bgImage} bg-cover bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
