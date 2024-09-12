@@ -23,17 +23,20 @@ import Footer from "../components/Footer/Footer";
 const WhyUs = () => {
   return (
     <div className="font-suse">
-      <Nav bgImage="header-image" />
+      <div className="relative">
+        <Nav bgImage="header-image" />
 
-      <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
-        <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-header-image text-center">
-          Why Us
-        </h1>
-        <h5 className="max-w-screen-lg mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-          Choosing SIECORP as your partner in infrastructure and energy
-          solutions offers a multitude of advantages, ensuring that your
-          projects are executed with excellence, innovation, and sustainability.
-        </h5>
+        <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
+          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-header-image text-center">
+            Why Us
+          </h1>
+          <h5 className="max-w-screen-lg mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            Choosing SIECORP as your partner in infrastructure and energy
+            solutions offers a multitude of advantages, ensuring that your
+            projects are executed with excellence, innovation, and
+            sustainability.
+          </h5>
+        </div>
       </div>
 
       <div className="min-h-screen bg-[#0B2D71] pt-20 px-5">

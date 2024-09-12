@@ -26,13 +26,15 @@ const Projects = () => {
 
   return (
     <div className="font-suse">
-      <Nav bgImage="p-header-image" />
+      <div className="relative">
+        <Nav bgImage="p-header-image" />
 
-      {/* TRANSPARENT HEADER TEXT */}
-      <div className="w-full bg-white absolute bottom-0 pb-8 animate__animated animate__slideInUp">
-        <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-p-header-image text-center">
-          Projects Undertaken By The Siecorp
-        </h1>
+        {/* TRANSPARENT HEADER TEXT */}
+        <div className="w-full bg-white absolute bottom-0 pb-8 animate__animated animate__slideInUp">
+          <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-p-header-image text-center">
+            Projects Undertaken By The Siecorp
+          </h1>
+        </div>
       </div>
 
       <div className="bg-[#0B2D71] flex-row items-center py-14">

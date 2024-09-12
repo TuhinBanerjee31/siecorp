@@ -12,18 +12,20 @@ import Nav from "../components/Nav/Nav";
 const OurBrand = () => {
   return (
     <div className="font-suse">
-      <Nav bgImage="ob-header-image" />
+      <div className="relative">
+        <Nav bgImage="ob-header-image" />
 
-      <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
-        <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ob-header-image text-center">
-          Our Brand
-        </h1>
-        <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-          Whether we’re fueling cars or advancing the energy system of tomorrow,
-          Chevron’s brands set the standard for excellence. With a rich history
-          dating back over a century, Chevron’s family of brands has built trust
-          and recognition worldwide.
-        </h5>
+        <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
+          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ob-header-image text-center">
+            Our Brand
+          </h1>
+          <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            Whether we’re fueling cars or advancing the energy system of
+            tomorrow, Chevron’s brands set the standard for excellence. With a
+            rich history dating back over a century, Chevron’s family of brands
+            has built trust and recognition worldwide.
+          </h5>
+        </div>
       </div>
 
       <div className="bg-[#0B2D71] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
