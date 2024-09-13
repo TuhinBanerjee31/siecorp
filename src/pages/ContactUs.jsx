@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./test.css";
 import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/Footer";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="">
       {/* <div className="min-h-[70vh] bg-cu-header-image bg-cover bg-no-repeat">
@@ -18,7 +22,7 @@ const ContactUs = () => {
         </h2>
       </div>
 
-      <div className="max-w-screen-lg mx-auto text-center min-h-[40vh] flex flex-col gap-4 justify-center px-4">
+      <div className="max-w-screen-lg mx-auto text-center min-h-[40vh] flex flex-col gap-4 justify-center px-4 pt-14">
         <h3 className="text-6xl font-semibold text-transparent stroke-b">
           We're Here to Help You!
         </h3>
@@ -32,16 +36,75 @@ const ContactUs = () => {
       <div className="px-4 py-10">
         <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#0B2D71] rounded-lg">
           <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-suse">
-            <div>
-              <h1 className="text-4xl font-bold text-white">
-                How to Reach Us?
+            <div className="flex flex-col gap-14">
+              <h1 className="text-6xl font-bold text-white">
+                How to Connect With Us?
               </h1>
-              <p className="text-sm text-gray-300 mt-4 leading-relaxed">
-                Have some big idea or brand to develop and need help? Then reach
-                out we'd love to hear about your project and provide help.
-              </p>
 
-              <ul className="mt-12 space-y-8">
+              <div className="flex flex-col gap-2">
+                <span className="flex items-center gap-2">
+                  <EnvelopeIcon className="h-6 text-white tracking-wider" />
+                  <p className="text-white text-sm md:text-lg">
+                    For general queries: info@thesiecorp.com
+                  </p>
+                </span>
+                <span className="flex items-center gap-2">
+                  <EnvelopeIcon className="h-6 text-white tracking-wider" />
+                  <p className="text-white text-sm md:text-lg">
+                    For business related enquiries: help@thesiecorp.com
+                  </p>
+                </span>
+                <span className="flex items-center gap-2">
+                  <EnvelopeIcon className="h-6 text-white tracking-wider" />
+                  <p className="text-white text-sm md:text-lg">
+                    For career related enquiries: careers@thesiecorp.com
+                  </p>
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <span className="flex items-center gap-2">
+                  <PhoneIcon className="h-6 text-white" />
+                  <div className="text-white text-sm md:text-lg flex justify-between items-center">
+                    <p>Asia Region enquires :</p>{" "}
+                    <p className="pl-5 md:pl-28">+91 (796) 9497 251</p>
+                  </div>
+                </span>
+
+                <span className="flex items-center gap-2">
+                  <PhoneIcon className="h-6 text-white" />
+                  <div className="text-white text-sm md:text-lg flex justify-between items-center">
+                    <p>Europe Region enquires :</p>{" "}
+                    <p className="pl-5 md:pl-24">+44 (789) 398 6072</p>
+                  </div>
+                </span>
+
+                <span className="flex items-center gap-2">
+                  <PhoneIcon className="h-6 text-white" />
+                  <div className="text-white text-sm md:text-lg flex justify-between items-center">
+                    <p>North America Region enquires :</p>{" "}
+                    <p className="pl-5 md:pl-10">+1 (844) 4878625</p>
+                  </div>
+                </span>
+
+                <span className="flex items-center gap-2">
+                  <PhoneIcon className="h-6 text-white" />
+                  <div className="text-white text-sm md:text-lg flex justify-between items-center">
+                    <p>Africa Region enquires :</p>{" "}
+                    <p className="pl-5 md:pl-28">+27 (983)-4555-90</p>
+                  </div>
+                </span>
+
+                <span className="flex items-center gap-2">
+                  <PhoneIcon className="h-6 text-white" />
+                  <div className="text-white text-sm md:text-lg flex justify-between items-center">
+                    <p>All other region enquires:</p>{" "}
+                    <p className="pl-5 md:pl-24">+65 (836) 502 38</p>
+                  </div>
+                </span>
+              </div>
+
+              {/* <ul className="mt-12 space-y-8">
                 <li className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +217,7 @@ const ContactUs = () => {
                     </svg>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
 
             <div className="bg-gray-100 p-6 rounded-lg">

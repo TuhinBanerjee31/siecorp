@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Nav from "../components/Nav/Nav";
-import c1 from "../assets/c-1.jpg";
-import c2 from "../assets/c-2.jpg";
-import c3 from "../assets/c-3.jpg";
-import c4 from "../assets/c-4.jpg";
+import c1 from "../assets/careerImages/c-1.jpg";
+import c2 from "../assets/careerImages/c-2.jpg";
+import c3 from "../assets/careerImages/c-3.jpg";
+import c4 from "../assets/careerImages/c-4.jpg";
 import Footer from "../components/Footer/Footer";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const Careers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <div className="relative">

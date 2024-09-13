@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../components/Nav/Nav";
 import darren from "../assets/leaders/Darren Lee Kai PRESIDENT.jpg";
 import benjamin from "../assets/leaders/Benjamin Tan Wei CEO.jpg";
@@ -77,6 +77,10 @@ const OurLeadership = () => {
     },
   ];
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="font-suse">
       <div className="relative">
@@ -88,9 +92,9 @@ const OurLeadership = () => {
             Our Leadership
           </h1>
           <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-            Our culture is built upon the principles of responsibility, trust
-            and integrity. Our leadership is a profound source of pride, as we
-            lead in the future of energy.
+            Our culture is founded on the values of accountability, reliability,
+            and honesty. We take great pride in our leadership, which is shaping
+            the future of energy.
           </h5>
         </div>
       </div>
@@ -101,16 +105,15 @@ const OurLeadership = () => {
         </h2>
 
         <h4 className="max-w-screen-md mx-auto text-xl py-6 text-center">
-          The Board of Directors of Chevron directs the affairs of the
-          corporation and is committed to sound principles of corporate
-          governance. They bring a proven track record of success across a broad
-          range of experiences at the policymaking level in business; expertise
-          in science, technology, engineering, research or academia; extensive
-          knowledge of governmental, regulatory, legal or public policy issues;
-          expertise in finance, financial disclosure or financial accounting;
-          experience in global business or international affairs; environmental
-          experience; experience leading business transformation; and service on
-          public company boards.
+          SIECORP’s leadership team is composed of visionary professionals with
+          a wealth of experience across diverse industries. Guided by a
+          commitment to excellence, innovation, and integrity, our leaders drive
+          the company’s strategic direction and ensure that SIECORP remains a
+          trusted partner globally. Their expertise, forward-thinking approach,
+          and dedication to fostering a collaborative culture empower our teams
+          to achieve remarkable results. At SIECORP, our leadership is focused
+          on not only meeting today’s challenges but also shaping the future of
+          the industries we serve.
         </h4>
       </div>
 

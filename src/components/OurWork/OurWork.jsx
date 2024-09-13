@@ -18,7 +18,7 @@ const OurWork = () => {
   return (
     <div className="min-h-screen font-suse">
       <h2 className="text-[#0B2D71] text-center font-bold py-10 text-3xl">
-        who we do
+        What we do
       </h2>
       <h1 className="md:text-8xl text-5xl font-extrabold text-[#0B2D71] max-w-screen-md mx-auto text-center">
         Transforming Vision into Reality

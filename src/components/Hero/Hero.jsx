@@ -1115,7 +1115,7 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <p className="p">learn more about anchor</p>
+                <Link to={'/our-leadership'} className="p">learn more about anchor</Link>
               </div>
             </div>
           </div>
@@ -1139,7 +1139,7 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <p className="p">learn more about our infrastructure</p>
+                <Link to={'/infrastructure'} className="p">learn more about our infrastructure</Link>
               </div>
             </div>
           </div>
@@ -1161,7 +1161,7 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <p className="p">learn more about our energy solutions</p>
+                <Link to={'/energy'} className="p">learn more about our energy solutions</Link>
               </div>
             </div>
           </div>
@@ -1183,7 +1183,7 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <p className="p">learn more about our maritime</p>
+                <Link to={'/maritime'} className="p">learn more about our maritime</Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Nav from "../components/Nav/Nav";
 import mh1 from "../assets/mh1.jpg";
 import mh2 from "../assets/mh2.jpg";
@@ -21,6 +21,11 @@ import NewsSlider from "../components/NewsSlider/NewsSlider";
 import Footer from "../components/Footer/Footer";
 
 const Maritime = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="font-suse">
       <div className="relative">
