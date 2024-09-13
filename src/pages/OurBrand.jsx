@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ob1 from "../assets/ourBrandImages/ob-1_resized.png";
 import ob2 from "../assets/ourBrandImages/ob-2.jpg";
 import ob3 from "../assets/ourBrandImages/ob-3_resized.png";
@@ -10,6 +10,10 @@ import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 
 const OurBrand = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="font-suse">
       <div className="relative">
@@ -156,7 +160,7 @@ const OurBrand = () => {
         </div>
       </div>
 
-      <div className="bg-[#3A0D36] flex lg:flex-row flex-col-reverse justify-around items-center py-14">
+      <div className="bg-[#3A0D36] flex lg:flex-row mb-14 flex-col-reverse justify-around items-center py-14">
         <div className="text-white max-w-2xl px-4 lg:text-left text-center py-4">
           <h3 className="lg:text-6xl text-4xl text-[#BA3093] font-bold">
             Adaptability

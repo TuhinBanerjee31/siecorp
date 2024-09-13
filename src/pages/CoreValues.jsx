@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 // import testImage from "../assets/ct-2.jpg";
 import cv1 from "../assets/coreValueImages/cv-1.jpg";
 import cv2 from "../assets/coreValueImages/cv-2.jpg";
@@ -11,6 +11,11 @@ import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
 
 const CoreValues = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   // const data1 = [
   //   {
   //     id: 1,

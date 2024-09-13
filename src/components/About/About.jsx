@@ -1,11 +1,12 @@
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="bg-[#07478F] min-h-screen font-suse">
-      <h2 className="text-white text-center py-10 text-3xl">who we are</h2>
+      <h2 className="text-white text-center py-10 text-3xl">Who we are</h2>
 
       <div className="moving-title py-10 px-5 flex flex-col">
         <h1 className="md:text-[10rem] text-5xl font-bold text-[#009DD9] md:self-end self-center">
@@ -27,10 +28,10 @@ const About = () => {
           through innovative solutions. This approach guarantees exceptional
           results and ongoing advancement in every project we undertake.
         </h2>
-        <div className="bg-transparent hover:bg-[#009DD9] text-[#009DD9] font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded flex items-center gap-4 cursor-pointer">
+        <Link to={'/why-us'} className="bg-transparent hover:bg-[#009DD9] text-[#009DD9] font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded flex items-center gap-4 cursor-pointer">
           <ArrowRightIcon className="h-5 w-5" />
-          <p className="p">discover who we are</p>
-        </div>
+          <p className="p">Discover why us</p>
+        </Link>
       </div>
     </div>
   );

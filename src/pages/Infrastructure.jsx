@@ -1,23 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../components/Nav/Nav";
-import {
-  ArrowRightIcon,
-  ShieldCheckIcon,
-  BuildingOffice2Icon,
-  PhotoIcon,
-  WrenchScrewdriverIcon,
-  BanknotesIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
 import i1 from "../assets/i-1.jpg";
-import i2 from "../assets/i-2.jpg";
-import i3 from "../assets/i-3.jpg";
-// import ct6 from "../assets/ct-6.jpg";
-import m2 from "../assets/m-2.jpg";
-import s2 from "../assets/slide2.jpg";
+import itest from "../assets/infraImages/i-test.jpg";
 import Footer from "../components/Footer/Footer";
 
 const Infrastructure = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="font-suse">
       <div className="relative">
@@ -53,18 +44,6 @@ const Infrastructure = () => {
         <div className="lg:h-96 h-56 px-8">
           <img src={i1} alt="..." className="h-full w-full rounded-2xl" />
         </div>
-
-        <div className="min-h-20 bg-[#0066B2] lg:w-[60vw] w-[95vw] text-center py-10 rounded-2xl my-14">
-          <h2 className="lg:text-5xl text-3xl text-white font-bold">
-            never compromise on quality
-          </h2>
-          <span className="flex justify-center gap-2 items-center py-7">
-            <ArrowRightIcon className="h-5 text-white" />
-            <p className="text-white p font-semibold">
-              we work every day to provide satisfaction
-            </p>
-          </span>
-        </div>
       </div>
 
       <div className="">
@@ -81,117 +60,306 @@ const Infrastructure = () => {
         </h5>
       </div>
 
-      <div className="bg-[#009DD9] p-8">
-        {/* <!-- Text Section --> */}
-        <div className="mb-8 text-center py-5">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#0B2D71] mb-6">
-            The Agency of Architecture
-          </h1>
-          <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-            What applies to the beginning of cultural evolution and consequently
-            to human evolution per se still applies today in relation to the
-            developmental tasks currently facing us. For architecture is not
-            only an expression of human progress.
-          </p>
-          <div className="bg-transparent hover:bg-[#0B2D71] text-white font-semibold hover:text-white my-10 py-2 px-1 border border-white hover:border-transparent rounded flex justify-center items-center max-w-72 gap-3 mx-auto cursor-pointer">
-            <ArrowRightIcon className="h-5 w-5" />
-            <p className="p">learn more about us</p>
+      <div className="px-5 py-10">
+        <div className="min-h-[55vh] bg-[#0B2D71] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#009DD9] md:text-6xl text-5xl font-semibold text-center py-5">
+            Buildings & Factories
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Residential and Commercial Buildings: Design and construction of
+                high-rise buildings, commercial complexes, and residential
+                townships.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Industrial Structures: Construction of factories, warehouses,
+                and industrial facilities.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Healthcare and Educational Institutions: Development of
+                hospitals, medical colleges, and educational campuses.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Sports and Recreation Facilities: Construction of sports arenas,
+                stadiums, and recreational centers.
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* <!-- Images Grid --> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="w-full h-64">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={m2}
-              alt="Building Image 1"
-            />
+        <div className="min-h-[55vh] bg-[#3A0D36] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#BA3093] md:text-6xl text-5xl font-semibold text-center py-5">
+            Transportation Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Roads and Highways: Construction of national and state highways,
+                expressways, and rural roads
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Bridges and Flyovers: Design and construction of large-span
+                bridges, flyovers, and viaducts.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Railway Infrastructure: Development of railway lines, stations,
+                and related facilities, including high-speed rail and metro
+                systems.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Airports: Construction and modernization of airport terminals,
+                runways, and related infrastructure.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Ports and Harbors: Design and construction of ports, jetties,
+                and related marine infrastructure.
+              </li>
+            </ul>
           </div>
-          <div className="w-full h-64">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src=""
-              alt="Building Image 2"
-            />
+        </div>
+
+        <div className="min-h-[55vh] bg-[#444B0D] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#B2CC34] md:text-6xl text-5xl font-semibold text-center py-5">
+            Power Transmission & Distribution
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Transmission Lines: Construction of high-voltage transmission
+                lines for power distribution.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Substations: Design and construction of electrical substations
+                for power distribution and control.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Power Distribution Networks: Implementation of power
+                distribution systems in urban and rural areas.
+              </li>
+            </ul>
           </div>
-          <div className="w-full h-64">
-            <img
-              className="w-full h-full object-cover rounded-lg"
-              src={s2}
-              alt="Building Image 3"
-            />
+        </div>
+
+        <div className="min-h-[55vh] bg-[#003653] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#00B2BD] md:text-6xl text-5xl font-semibold text-center py-5">
+            Water & Effluent Treatment
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Water Supply Systems: Design and construction of water treatment
+                plants, reservoirs, and pipelines.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Sewage Treatment Plants: Development of sewage and effluent
+                treatment plants.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Water Desalination: Implementation of desalination plants to
+                convert seawater into potable water.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Irrigation Systems: Construction of dams, canals, and irrigation
+                infrastructure to support agriculture.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#58001C] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#E21836] md:text-6xl text-5xl font-semibold text-center py-5">
+            Renewable Energy Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Solar Power Plants: Design and construction of large scale solar
+                photovoltaic (PV) plants
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Wind Energy Projects: Development of onshore and offshore wind
+                farms.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Hydropower Projects: Construction of dams and hydropower
+                stations for renewable energy generation.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#0B2D71] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#009DD9] md:text-6xl text-5xl font-semibold text-center py-5">
+            Smart Cities & Urban Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Smart Cities: Development of smart city infrastructure,
+                including integrated urban management systems, intelligent
+                traffic management, and smart grids.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Urban Transit Systems: Construction of metro rail systems,
+                monorails, and bus rapid transit systems (BRTS).
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Urban Development Projects: Development of mixed-use townships,
+                commercial zones, and public spaces.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#3A0D36] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#BA3093] md:text-6xl text-5xl font-semibold text-center py-5">
+            Heavy Civil Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Dams and Hydroelectric Projects: Design and construction of
+                large dams, hydroelectric plants, and associated tunnels.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Tunnels and Underground Infrastructure: Construction of road,
+                rail, and water supply tunnels, as well as underground metro
+                systems.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Mining Infrastructure: Development of mining facilities,
+                including mineral processing plants and bulk material handling
+                systems.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#444B0D] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#B2CC34] md:text-6xl text-5xl font-semibold text-center py-5">
+            Environmental Engineering
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Waste Management: Design and implementation of solid waste
+                management systems, including waste-to-energy plants.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Pollution Control Systems: Development of air and water
+                pollution control systems for industries and urban areas.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#003653] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#00B2BD] md:text-6xl text-5xl font-semibold text-center py-5">
+            Telecom & IT Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Telecommunication Towers: Construction and maintenance of
+                telecom towers for cellular and wireless networks.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Data Centers: Design and construction of data centers for IT and
+                telecom companies.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Fiber Optic Networks: Implementation of fiber optic networks for
+                high-speed internet and communication services.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#58001C] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#E21836] md:text-6xl text-5xl font-semibold text-center py-5">
+            Oil & Gas Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Refineries and Petrochemical Plants: Design and construction of
+                oil refineries and petrochemical plants.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Pipelines: Laying of pipelines for the transportation of oil,
+                gas, and other petrochemical products.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Offshore Platforms: Development of offshore drilling platforms
+                and related infrastructure.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="min-h-[55vh] bg-[#3A0D36] max-w-screen-xl rounded-xl mx-auto px-4">
+          <h2 className="text-[#BA3093] md:text-6xl text-5xl font-semibold text-center py-5">
+            Defence Infrastructure
+          </h2>
+          <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
+            <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
+              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+            </div>
+
+            <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Defence Facilities: Construction of military bases, airfields,
+                and naval facilities.
+              </li>
+              <li className="md:text-2xl text-xl tracking-wider list-disc">
+                Aerospace Infrastructure: Development of aerospace manufacturing
+                facilities and testing centers.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div className="max-w-screen-2xl flex flex-wrap justify-center items-center gap-5 mx-auto py-20">
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <BuildingOffice2Icon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">
-            Service Premises
-          </h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            Our complex has office space and convenience stores on the ground
-            floor. There's lot of hate out there for a text
-          </h5>
-        </div>
-
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <ShieldCheckIcon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">
-            Safety and Security
-          </h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            Reliable round-the-clock surveillance by a security system using
-            modern technologies. The villagers are out there with
-          </h5>
-        </div>
-
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <PhotoIcon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">
-            Environmental Solutions
-          </h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            We care about the environment, which is why we use LED lighting and
-            have a charging station for electric vehicles clients
-          </h5>
-        </div>
-
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <WrenchScrewdriverIcon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">
-            Ease of Management
-          </h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            You just buy an apartment, and a professional hotel operator will do
-            the rest for you. That Amounts to little more than garbled words.
-          </h5>
-        </div>
-
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <BanknotesIcon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">
-            Guaranteed Income
-          </h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            Guaranteed monthly incom is prescribed in advance in the contract.
-            True enough, but that's not all that it takes to get things
-          </h5>
-        </div>
-
-        <div className="flex flex-col justify-center gap-3 bg-[#0B2D71] min-h-64 max-w-96 rounded-lg p-5">
-          <MapPinIcon className="h-9 w-9 text-white" />
-          <h2 className="text-[#009DD9] font-bold text-2xl">Great Location</h2>
-          <h5 className="text-white tracking-wide w-[90%]">
-            A pledge of a secure rental of your apartment. A client that's
-            unhappy for a reason is a problem, a client that's unhappy
-          </h5>
-        </div>
-      </div>
-
-      {/* <div className="min-h-screen"></div> */}
 
       <Footer />
     </div>

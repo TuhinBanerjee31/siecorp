@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/siecorp_logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -72,48 +73,48 @@ const Footer = () => {
             <div>
               <ul className="text-white font-medium flex flex-col gap-3">
                 <li>
-                  <p className="p">Who we are</p>
+                  <Link to={'/why-us'} className="p">Why us</Link>
                 </li>
                 <li>
-                  <p className="p">Our Leadership</p>
+                  <Link to={'/our-leadership'} className="p">Our Leadership</Link>
                 </li>
                 <li>
-                  <p className="p">What we do</p>
+                  <Link to={'/core-values'} className="p">Core Values</Link>
                 </li>
                 <li>
-                  <p className="p">Our brands</p>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul className="text-white font-medium flex flex-col gap-3">
-                <li>
-                  <p className="p">Newsroom</p>
-                </li>
-                <li>
-                  <p className="p">Core Values</p>
-                </li>
-                <li>
-                  <p className="p">Infrastructure</p>
-                </li>
-                <li>
-                  <p className="p">Maritime</p>
-                </li>
-                <li>
-                  <p className="p">Energy</p>
+                  <Link to={'/our-brand'} className="p">Our Brand</Link>
                 </li>
               </ul>
             </div>
             <div>
               <ul className="text-white font-medium flex flex-col gap-3">
                 <li>
-                  <p className="p">Location</p>
+                  <Link to={'/newsroom'} className="p">Newsroom</Link>
                 </li>
                 <li>
-                  <p className="p">Careers</p>
+                  <Link to={'/projects'} className="p">Our Projects</Link>
                 </li>
                 <li>
-                  <p className="p">Contact Us</p>
+                  <Link to={'/infrastructure'} className="p">Infrastructure</Link>
+                </li>
+                <li>
+                  <Link to={'/maritime'} className="p">Maritime</Link>
+                </li>
+                <li>
+                  <Link to={'/energy'} className="p">Energy</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="text-white font-medium flex flex-col gap-3">
+                <li>
+                  <Link to={'/location'} className="p">Location</Link>
+                </li>
+                <li>
+                  <Link to={'/careers'} className="p">Careers</Link>
+                </li>
+                <li>
+                  <Link to={'/contact-us'} className="p">Contact Us</Link>
                 </li>
               </ul>
             </div>

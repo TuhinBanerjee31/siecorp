@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Nav from "../components/Nav/Nav";
 import mh1 from "../assets/mh1.jpg";
 import mh2 from "../assets/mh2.jpg";
@@ -7,27 +7,31 @@ import mh4 from "../assets/mh4.jpg";
 import mh5 from "../assets/mh5.jpg";
 import mh6 from "../assets/mh6.jpg";
 import mh7 from "../assets/mh7.jpg";
-import wu1 from "../assets/wu-1.jpg";
-import wu2 from "../assets/wu-2.jpg";
-import wu3 from "../assets/wu-3.jpg";
-import wu4 from "../assets/wu-4.jpg";
-import wu5 from "../assets/wu-5.png";
-import wu6 from "../assets/wu-6.jpg";
-import wu7 from "../assets/wu-7.jpg";
-import wu8 from "../assets/wu-8.jpg";
-import wu9 from "../assets/wu-9.jpg";
-import wu10 from "../assets/wu-10.jpg";
+import wu1 from "../assets/whyUsImages/wu-1.jpg";
+import wu2 from "../assets/whyUsImages/wu-2.jpg";
+import wu3 from "../assets/whyUsImages/wu-3.jpg";
+import wu4 from "../assets/whyUsImages/wu-4.jpg";
+import wu5 from "../assets/whyUsImages/wu-5.png";
+import wu6 from "../assets/whyUsImages/wu-6.jpg";
+import wu7 from "../assets/whyUsImages/wu-7.jpg";
+import wu8 from "../assets/whyUsImages/wu-8.jpg";
+import wu9 from "../assets/whyUsImages/wu-9.jpg";
+import wu10 from "../assets/whyUsImages/wu-10.jpg";
 import NewsSlider from "../components/NewsSlider/NewsSlider";
 import Footer from "../components/Footer/Footer";
 
 const WhyUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="font-suse">
       <div className="relative">
-        <Nav bgImage="header-image" />
+        <Nav bgImage="wu-header-image" />
 
         <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
-          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-header-image text-center">
+          <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-wu-header-image text-center">
             Why Us
           </h1>
           <h5 className="max-w-screen-lg mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
