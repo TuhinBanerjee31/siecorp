@@ -144,7 +144,7 @@ const Nav1 = () => {
   const [menu2, setMenu2] = React.useState(false);
   return (
     <div
-      className={`header bg-card1-image bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-card1-image bg-cover bg-center bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
@@ -410,7 +410,7 @@ const Nav2 = () => {
   const [menu2, setMenu2] = React.useState(false);
   return (
     <div
-      className={`header bg-card2-image bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-card2-image bg-cover bg-center bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
@@ -676,7 +676,7 @@ const Nav3 = () => {
   const [menu2, setMenu2] = React.useState(false);
   return (
     <div
-      className={`header bg-card3-image bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-card3-image bg-cover bg-center bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
@@ -942,7 +942,7 @@ const Nav4 = () => {
   const [menu2, setMenu2] = React.useState(false);
   return (
     <div
-      className={`header bg-card4-image bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-card4-image bg-cover bg-center bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
