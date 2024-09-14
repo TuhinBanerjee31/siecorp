@@ -364,7 +364,7 @@ const Nav = ({bgImage}) => {
   }, []);
   return (
     <div
-      className={`header bg-${bgImage} bg-cover bg-no-repeat min-h-screen font-suse`}
+      className={`header bg-${bgImage} bg-cover bg-center bg-no-repeat min-h-screen font-suse`}
     >
       <div
         id="hover-sheet1"
