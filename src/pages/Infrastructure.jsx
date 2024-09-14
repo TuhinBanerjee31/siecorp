@@ -1,7 +1,16 @@
 import React, { useEffect } from "react";
 import Nav from "../components/Nav/Nav";
-import i1 from "../assets/i-1.jpg";
-import itest from "../assets/infraImages/i-test.jpg";
+import i1 from "../assets/infraImages/i-1.jpg";
+import i2 from "../assets/infraImages/i-2.jpg";
+import i3 from "../assets/infraImages/i-3.png";
+import i4 from "../assets/infraImages/i-4.png";
+import i5 from "../assets/infraImages/i-5.jpg";
+import i6 from "../assets/infraImages/i-6.jpg";
+import i7 from "../assets/infraImages/i-7.png";
+import i8 from "../assets/infraImages/i-8.png";
+import i9 from "../assets/infraImages/i-9.png";
+import i10 from "../assets/infraImages/i-10.png";
+import i11 from "../assets/infraImages/i-11.jpg";
 import Footer from "../components/Footer/Footer";
 
 const Infrastructure = () => {
@@ -17,19 +26,21 @@ const Infrastructure = () => {
         {/* TRANSPARENT HEADER TEXT */}
         <div className="w-full bg-white absolute bottom-0 pb-8">
           <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-i-header-image text-center">
-            infrastructure
+            Infrastructure
           </h1>
-          <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
-            Our company has a long, robust history that began when a group of
-            explorers and merchants established the Pacific Coast Oil Co. on
-            September 10, 1879. Since then, our company’s name has changed more
-            than once, but we’ve always retained our founders’ spirit, grit,
-            innovation and perseverance.
+          <h5 className="max-w-screen-xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
+            At SIECORP, we deliver cutting-edge infrastructure solutions that
+            transform communities and drive progress. With a focus on
+            innovation, precision, and sustainability, we execute projects that
+            meet the highest standards of quality and efficiency. From planning
+            to completion, our infrastructure expertise ensures long-lasting,
+            impactful results that support the growth and development of
+            industries worldwide.
           </h5>
         </div>
       </div>
 
-      <div className="min-h-screen bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8">
+      {/* <div className="min-h-screen bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8">
         <h1 className="text-white font-extrabold text-6xl text-center">
           premium way of development
         </h1>
@@ -44,7 +55,7 @@ const Infrastructure = () => {
         <div className="lg:h-96 h-56 px-8">
           <img src={i1} alt="..." className="h-full w-full rounded-2xl" />
         </div>
-      </div>
+      </div> */}
 
       <div className="">
         <h2 className="text-[#0B2D71] text-center font-bold py-10 text-3xl">
@@ -54,20 +65,19 @@ const Infrastructure = () => {
           work that glorifies the world
         </h1>
         <h5 className="text-2xl max-w-screen-md mx-auto text-center py-14 px-7">
-          We’re working to deliver the energy needed today. To lower the carbon
-          intensity of our operations. And to build the lower carbon energy
+          We’re working to deliver the needs today. To enhance the quality of our operations. And to build the impact on the
           system of tomorrow.
         </h5>
       </div>
 
-      <div className="px-5 py-10">
+      <div className="px-5 py-10 flex flex-col gap-5">
         <div className="min-h-[55vh] bg-[#0B2D71] max-w-screen-xl rounded-xl mx-auto px-4">
           <h2 className="text-[#009DD9] md:text-6xl text-5xl font-semibold text-center py-5">
             Buildings & Factories
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i1} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -98,7 +108,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i2} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -133,7 +143,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i3} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -159,7 +169,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i4} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -189,7 +199,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i5} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -215,7 +225,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i6} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -242,7 +252,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i7} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -270,7 +280,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i8} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -292,7 +302,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i9} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -318,7 +328,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i10} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">
@@ -344,7 +354,7 @@ const Infrastructure = () => {
           </h2>
           <div className="flex lg:flex-row flex-col justify-around items-center md:gap-5 gap-8 py-5 px-5 my-4">
             <div className="flex flex-col gap-4 justify-center items-center w-[70%] h-[70%]">
-              <img src={itest} alt="..." className="rounded-lg w-full h-full" />
+              <img src={i11} alt="..." className="rounded-lg w-full h-full" />
             </div>
 
             <ul className="text-white max-w-screen-md lg:px-4 px-1 py-3 flex flex-col gap-3">

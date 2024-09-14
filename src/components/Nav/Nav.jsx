@@ -172,9 +172,9 @@ const Nav = ({bgImage}) => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -322,9 +322,9 @@ const Nav = ({bgImage}) => {
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
-          <a href="#" className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <Link to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
             newsroom
-          </a>
+          </Link>
         </div>
       </ul>
     );
@@ -544,7 +544,7 @@ const Nav = ({bgImage}) => {
           </div>
 
           <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            <NavLink to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></NavLink>
           </div>
         </div>
       </nav>

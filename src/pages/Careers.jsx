@@ -19,7 +19,7 @@ const Careers = () => {
         {/* TRANSPARENT HEADER TEXT */}
         <div className="w-full bg-white absolute bottom-0 pb-8">
           <h1 className="lg:text-[11rem] text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-c-header-image text-center">
-            careers
+            Careers
           </h1>
           <h5 className="max-w-2xl mx-auto lg:text-2xl text-lg tracking-wider text-center px-5">
             Team members of all experience levels tackle global, real world
@@ -126,7 +126,7 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className="bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8 mt-10">
+      {/* <div className="bg-[#0B2D71] flex flex-col justify-center items-center gap-8 py-14 px-8 mt-10">
         <div className="min-h-20 bg-[#0066B2] lg:w-[60vw] w-[95vw] text-center py-10 rounded-2xl my-14">
           <h2 className="lg:text-5xl text-3xl text-white font-bold">
             siecorp email updates
@@ -138,7 +138,7 @@ const Careers = () => {
             </p>
           </span>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

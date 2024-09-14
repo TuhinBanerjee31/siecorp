@@ -1,18 +1,18 @@
 import React, {useEffect} from "react";
 import Nav from "../components/Nav/Nav";
-import mh1 from "../assets/mh1.jpg";
-import mh2 from "../assets/mh2.jpg";
-import mh3 from "../assets/mh3.jpg";
-import mh4 from "../assets/mh4.jpg";
-import mh5 from "../assets/mh5.jpg";
-import mh6 from "../assets/mh6.jpg";
-import mh7 from "../assets/mh7.jpg";
+import cc7 from "../assets/commonCollage/cc7.jpg";
+import cc1 from "../assets/commonCollage/cc1.jpg";
+import cc6 from "../assets/commonCollage/cc6.jpg";
+import cc3 from "../assets/commonCollage/cc3.jpg";
+import cc2 from "../assets/commonCollage/cc2.jpg";
+import cc4 from "../assets/commonCollage/cc4.jpg";
+import cc5 from "../assets/commonCollage/cc5.jpg";
 import wu1 from "../assets/whyUsImages/wu-1.jpg";
 import wu2 from "../assets/whyUsImages/wu-2.jpg";
 import wu3 from "../assets/whyUsImages/wu-3.jpg";
 import wu4 from "../assets/whyUsImages/wu-4.jpg";
-import wu5 from "../assets/whyUsImages/wu-5.png";
-import wu6 from "../assets/whyUsImages/wu-6.jpg";
+import wu5 from "../assets/whyUsImages/wu-5.jpg";
+import wu6 from "../assets/whyUsImages/wu-6.png";
 import wu7 from "../assets/whyUsImages/wu-7.jpg";
 import wu8 from "../assets/whyUsImages/wu-8.jpg";
 import wu9 from "../assets/whyUsImages/wu-9.jpg";
@@ -58,7 +58,7 @@ const WhyUs = () => {
             {/* <!-- First Image (Spans 2 columns on large screens) --> */}
             <div className="col-span-1 lg:col-span-2">
               <img
-                src={mh4}
+                src={cc3}
                 alt="Person with Color Display"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -67,7 +67,7 @@ const WhyUs = () => {
             {/* <!-- Second Image --> */}
             <div className="col-span-1">
               <img
-                src={mh2}
+                src={cc1}
                 alt="Control Room2"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -76,7 +76,7 @@ const WhyUs = () => {
             {/* <!-- Third Image --> */}
             <div className="col-span-1">
               <img
-                src={mh5}
+                src={cc2}
                 alt="Touch Interface"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -85,7 +85,7 @@ const WhyUs = () => {
             {/* <!-- Fourth Image --> */}
             <div className="col-span-1">
               <img
-                src={mh1}
+                src={cc7}
                 alt="Engineer at Work"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -94,7 +94,7 @@ const WhyUs = () => {
             {/* <!-- Fifth Image --> */}
             <div className="col-span-1">
               <img
-                src={mh6}
+                src={cc4}
                 alt="Engineer at Work"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -103,7 +103,7 @@ const WhyUs = () => {
             {/* <!-- sixth Image --> */}
             <div className="col-span-1">
               <img
-                src={mh7}
+                src={cc5}
                 alt="Engineer at Work"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />
@@ -112,7 +112,7 @@ const WhyUs = () => {
             {/* <!-- seventh Image --> */}
             <div className="col-span-1 sm:col-span-2 lg:col-span-1">
               <img
-                src={mh3}
+                src={cc6}
                 alt="Person at Computer"
                 className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
               />

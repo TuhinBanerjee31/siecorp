@@ -32,35 +32,28 @@ const Footer = () => {
 
               <div className="flex gap-5 pt-3 justify-center sm:mt-0 md:ml-14">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61565051651059"
                   className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-facebook"></ion-icon>
                   <span className="sr-only">Facebook page</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/siecorp"
                   className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-linkedin"></ion-icon>
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 <a
-                  href="#"
-                  className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
-                >
-                  <ion-icon name="logo-twitter"></ion-icon>
-                  <span className="sr-only">Twitter page</span>
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/thesiecorp/"
                   className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-instagram"></ion-icon>
                   <span className="sr-only">Instagram account</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@thesiecorp"
                   className="text-gray-500 hover:text-white cursor-pointer dark:hover:text-white"
                 >
                   <ion-icon name="logo-youtube"></ion-icon>

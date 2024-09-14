@@ -16,6 +16,7 @@ import WhyUs from "./pages/WhyUs.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Projects from "./pages/Projects.jsx";
 import Location from "./pages/Location.jsx";
+import Newsroom from "./pages/Newsroom.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -63,6 +64,7 @@ const router = createBrowserRouter(
       <Route path='contact-us' element={<ContactUs />} />
       <Route path='projects' element={<Projects />} />
       <Route path='location' element={<Location />} />
+      <Route path='newsroom' element={<Newsroom />} />
     </Route>
   )
 );

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import ob1 from "../assets/ourBrandImages/ob-1_resized.png";
 import ob2 from "../assets/ourBrandImages/ob-2.jpg";
 import ob3 from "../assets/ourBrandImages/ob-3_resized.png";
@@ -19,15 +19,18 @@ const OurBrand = () => {
       <div className="relative">
         <Nav bgImage="ob-header-image" />
 
-        <div className="w-full bg-white min-h-[55vh] absolute bottom-0 pb-16 flex flex-col justify-center items-center">
+        <div className="w-full bg-white absolute bottom-0 pb-16 flex flex-col justify-center items-center">
           <h1 className="lg:text-[11rem] text-8xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-ob-header-image text-center">
             Our Brand
           </h1>
-          <h5 className="max-w-2xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-            Whether we’re fueling cars or advancing the energy system of
-            tomorrow, Chevron’s brands set the standard for excellence. With a
-            rich history dating back over a century, Chevron’s family of brands
-            has built trust and recognition worldwide.
+          <h5 className="max-w-screen-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            SIECORP embodies a commitment to excellence, innovation, and
+            integrity. Our brand reflects a forward-thinking approach to
+            delivering world-class solutions across industries, with a focus on
+            sustainability and long-term impact. Built on a foundation of trust
+            and quality, SIECORP’s brand stands for progress and reliability,
+            empowering clients and partners to achieve their goals while shaping
+            a better future.
           </h5>
         </div>
       </div>

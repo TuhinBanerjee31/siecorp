@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
 import Nav from "../components/Nav/Nav";
-import e1 from "../assets/e1.png";
-import e2 from "../assets/e2.jpg";
-import e3 from "../assets/e3.jpg";
-import e4 from "../assets/e4.png";
+import e1 from "../assets/energyImage/e-1.png";
+import e2 from "../assets/energyImage/e-2.png";
+import e3 from "../assets/energyImage/e-3.png";
+import e4 from "../assets/energyImage/e-4.png";
+import e5 from "../assets/energyImage/e-5.png";
+import e6 from "../assets/energyImage/e-6.png";
+import e7 from "../assets/energyImage/e-7.jpg";
+import e8 from "../assets/energyImage/e-8.png";
+import e9 from "../assets/energyImage/e-9.png";
+import e10 from "../assets/energyImage/e-10.png";
 import EnergyCard from "../components/EnergyCard/EnergyCard";
 import NewsSlider from "../components/NewsSlider/NewsSlider";
 import Footer from "../components/Footer/Footer";
@@ -27,11 +33,16 @@ const Energy = () => {
 
         <div className="w-full bg-white pb-24 absolute bottom-0">
           <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-e-header-image text-center">
-            energy solutions
+            Energy Solutions
           </h1>
-          <h5 className="max-w-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
-            Affordable, reliable and ever-cleaner energy for today and tomorrow.
-            That’s what we’re working towards, every day.
+          <h5 className="max-w-screen-xl mx-auto lg:text-2xl text-xl tracking-wider text-center px-5">
+            SIECORP is at the forefront of delivering advanced energy solutions
+            that power a sustainable future. We specialize in renewable energy,
+            innovative technologies, and efficient systems that reduce
+            environmental impact while meeting global energy demands. Our
+            commitment to innovation and sustainability ensures that our energy
+            solutions drive progress and create long-term value for industries
+            and communities alike
           </h5>
         </div>
       </div>
@@ -123,12 +134,12 @@ const Energy = () => {
             Transmission Systems (FACTS), which help maintain grid stability in
             the face of fluctuating power supply and demand.
           </p>
-          <p className="mb-4 text-lg md:w-[90%]">
+          {/* <p className="mb-4 text-lg md:w-[90%]">
             Smart Grids: SIECORP is involved in developing smart grid
             technologies that enhance the efficiency and reliability of
             electricity distribution, integrating renewable energy sources with
             traditional power systems.
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -164,7 +175,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e1}
+            src={e5}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-l-lg rounded-t-lg"
           />
@@ -194,7 +205,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e2}
+            src={e6}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-r-lg rounded-b-lg"
           />
@@ -219,7 +230,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e3}
+            src={e7}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-l-lg rounded-t-lg"
           />
@@ -252,7 +263,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e4}
+            src={e8}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-r-lg rounded-b-lg"
           />
@@ -285,7 +296,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e1}
+            src={e9}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-l-lg rounded-t-lg"
           />
@@ -318,7 +329,7 @@ const Energy = () => {
         {/* <!-- Left Image Section --> */}
         <div className="w-full md:w-1/2">
           <img
-            src={e2}
+            src={e10}
             alt="Workers in factory"
             className="w-full h-full object-cover lg:rounded-none lg:rounded-r-lg rounded-b-lg"
           />

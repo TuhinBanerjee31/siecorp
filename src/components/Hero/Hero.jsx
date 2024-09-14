@@ -70,9 +70,9 @@ const Nav1 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <a href="#" className="flex items-center transition-colors p">
+          <Link to={'/newsroom'} className="flex items-center transition-colors p">
             newsroom
-          </a>
+          </Link>
         </div>
       </ul>
     );
@@ -130,9 +130,9 @@ const Nav1 = () => {
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
-          <a href="#" className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -269,7 +269,7 @@ const Nav1 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
           </div>
         </div>
       </nav>
@@ -336,9 +336,9 @@ const Nav2 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -396,9 +396,9 @@ const Nav2 = () => {
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
-          <a href="#" className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -535,7 +535,7 @@ const Nav2 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
           </div>
         </div>
       </nav>
@@ -602,9 +602,9 @@ const Nav3 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -662,9 +662,9 @@ const Nav3 = () => {
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
-          <a href="#" className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -801,7 +801,7 @@ const Nav3 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
           </div>
         </div>
       </nav>
@@ -868,9 +868,9 @@ const Nav4 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <a href="#" className="flex items-center transition-colors p">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -928,9 +928,9 @@ const Nav4 = () => {
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
-          <a href="#" className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
             newsroom
-          </a>
+          </NavLink>
         </div>
       </ul>
     );
@@ -1067,7 +1067,7 @@ const Nav4 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
           </div>
         </div>
       </nav>
