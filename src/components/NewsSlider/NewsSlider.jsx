@@ -5,12 +5,12 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import {ArrowRightIcon, ChevronDoubleLeftIcon, ChevronDoubleRightIcon} from "@heroicons/react/24/outline";
-import slide1 from '../../assets/slide1.jpg'
-import slide2 from '../../assets/slide2.jpg'
-import slide3 from '../../assets/slide3.jpg'
-import slide4 from '../../assets/slide4.jpg'
-import slide5 from '../../assets/slide5.jpg'
-import slide6 from '../../assets/slide6.jpg'
+import slide1 from '../../assets/newsSliderImages/slide1.jpg'
+import slide2 from '../../assets/newsSliderImages/slide2.jpg'
+import slide3 from '../../assets/newsSliderImages/slide3.jpg'
+import slide4 from '../../assets/newsSliderImages/slide4.jpg'
+import slide5 from '../../assets/newsSliderImages/slide5.jpg'
+import slide6 from '../../assets/newsSliderImages/slide6.jpg'
 
 const NewsSlider = (props) => {
   return (
@@ -36,10 +36,10 @@ const NewsSlider = (props) => {
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 23, 2024</h5>
                     <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">1st US hydrogen-powered passenger ferry open for business.</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
 
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs"><ChevronDoubleLeftIcon className='h-4 w-4' />Swipe</p>
                 </div>
@@ -50,11 +50,11 @@ const NewsSlider = (props) => {
                 <img src={slide2} alt='...' />
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 20, 2024</h5>
-                    <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">chevron powers up engineering and innovation ENGINE in india</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">siecorp powers up engineering and innovation ENGINE in india</h3>
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs"><ChevronDoubleLeftIcon className='h-4 w-4' />Swipe<ChevronDoubleRightIcon className='h-4 w-4' /></p>
                 </div>
             </SwiperSlide>
@@ -65,10 +65,10 @@ const NewsSlider = (props) => {
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 20, 2024</h5>
                     <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">mini robots clean platforms underwater.</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs"><ChevronDoubleLeftIcon className='h-4 w-4' />Swipe<ChevronDoubleRightIcon className='h-4 w-4' /></p>
                 </div>
             </SwiperSlide>
@@ -79,10 +79,10 @@ const NewsSlider = (props) => {
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 19, 2024</h5>
                     <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">new technologies help improve worker safety</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs"><ChevronDoubleLeftIcon className='h-4 w-4' />Swipe<ChevronDoubleRightIcon className='h-4 w-4' /></p>
                 </div>
             </SwiperSlide>
@@ -93,10 +93,10 @@ const NewsSlider = (props) => {
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 14, 2024</h5>
                     <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">3 ways to create resilient strategies in changing times</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs"><ChevronDoubleLeftIcon className='h-4 w-4' />Swipe<ChevronDoubleRightIcon className='h-4 w-4' /></p>
                 </div>
             </SwiperSlide>
@@ -107,10 +107,10 @@ const NewsSlider = (props) => {
                 <div className="info px-4 flex flex-col gap-4 py-4">
                     <h5 className="md:text-xl text-sm text-white tracking-wide">August 12, 2024</h5>
                     <h3 className="md:text-2xl text-base text-white tracking-wide md:max-w-[97%] max-w-full">energy everywhere: a new frontier in deepwater development</h3>
-                    <div className="btn py-3 flex items-center gap-3 text-white">
+                    {/* <div className="btn py-3 flex items-center gap-3 text-white">
                         <ArrowRightIcon className='h-4 w-4' />
                         <p className="p font-bold tracking-wide">read article</p>
-                    </div>
+                    </div> */}
                     <p className="text-white flex justify-center items-center gap-2 opacity-65 tracking-widest md:text-base text-xs">Swipe<ChevronDoubleRightIcon className='h-4 w-4' /></p>
                 </div>
             </SwiperSlide>
