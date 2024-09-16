@@ -17,13 +17,13 @@ const ContactUs = () => {
 
       <div className="flex flex-col justify-center h-[70vh] pl-5 absolute bottom-0">
         <h2 className="text-white font-bold text-8xl tracking-wide">Need</h2>
-        <h2 className="text-transparent font-bold text-9xl tracking-wide stroke-w">
+        <h2 className="text-[#0B2D71] font-bold text-9xl tracking-wide">
           Help?
         </h2>
       </div>
 
       <div className="max-w-screen-lg mx-auto text-center min-h-[40vh] flex flex-col gap-4 justify-center px-4 pt-14">
-        <h3 className="text-6xl font-semibold text-transparent stroke-b">
+        <h3 className="text-6xl font-semibold text-[#0B2D71]">
           We're Here to Help You!
         </h3>
         <h5 className="font-suse text-3xl tracking-wide">

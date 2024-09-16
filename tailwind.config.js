@@ -20,7 +20,7 @@ module.exports = withMT( {
         'ob-header-image': "url('/src/assets/ourBrandImages/ob-header.jpg')",
         'ol-header-image': "url('/src/assets/leaders/ol-header.jpg')",
         'e-header-image': "url('/src/assets/energyImage/e-header.jpg')",
-        'm-header-image': "url('/src/assets/m-header.jpg')",
+        'm-header-image': "url('/src/assets/maritimeImages/m-header.jpg')",
         'i-header-image': "url('/src/assets/infraImages/i-header.jpg')",
         'c-header-image': "url('/src/assets/careerImages/c-header.jpg')",
         'p-header-image': "url('/src/assets/projectImages/p-header.jpg')",

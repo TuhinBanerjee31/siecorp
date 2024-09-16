@@ -1,24 +1,25 @@
 import React, { useEffect } from "react";
 import Nav from "../components/Nav/Nav";
-import mh1 from "../assets/mh1.jpg";
-import mh2 from "../assets/mh2.jpg";
-import mh3 from "../assets/mh3.jpg";
-import mh4 from "../assets/mh4.jpg";
-import mh5 from "../assets/mh5.jpg";
-import mh6 from "../assets/mh6.jpg";
-import mh7 from "../assets/mh7.jpg";
-import mh8 from "../assets/mh8.jpg";
+import m1 from "../assets/maritimeImages/m1.jpg";
+import m2 from "../assets/maritimeImages/m2.jpg";
+import m3 from "../assets/maritimeImages/m3.jpg";
+import m4 from "../assets/maritimeImages/m4.jpg";
+import m5 from "../assets/maritimeImages/m5.jpg";
+import m6 from "../assets/maritimeImages/m6.jpg";
+import m7 from "../assets/maritimeImages/m7.jpg";
+import m8 from "../assets/maritimeImages/m8.jpg";
+import m9 from "../assets/maritimeImages/m9.jpg";
+import m10 from "../assets/maritimeImages/m10.jpg";
+import m11 from "../assets/maritimeImages/m11.jpg";
+import m12 from "../assets/maritimeImages/m12.jpg";
+import m13 from "../assets/maritimeImages/m13.jpg";
+import m14 from "../assets/maritimeImages/m14.jpg";
+import m15 from "../assets/maritimeImages/m15.jpg";
 import mo1 from "../assets/illustrations/m-overlay1.svg";
 import mo2 from "../assets/illustrations/m-overlay2.svg";
 import mo3 from "../assets/illustrations/m-overlay3.svg";
 import mo4 from "../assets/illustrations/m-overlay4.svg";
 import mo5 from "../assets/illustrations/m-overlay5.svg";
-import m1 from "../assets/m-1.jpg";
-import m2 from "../assets/m-2.jpg";
-import m3 from "../assets/m-3.jpg";
-import m4 from "../assets/m-4.jpg";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import NewsSlider from "../components/NewsSlider/NewsSlider";
 import Footer from "../components/Footer/Footer";
 
 const Maritime = () => {
@@ -52,7 +53,7 @@ const Maritime = () => {
           {/* <!-- First Image (Spans 2 columns on large screens) --> */}
           <div className="col-span-1 lg:col-span-2">
             <img
-              src={mh4}
+              src={m4}
               alt="Person with Color Display"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -61,7 +62,7 @@ const Maritime = () => {
           {/* <!-- Second Image --> */}
           <div className="col-span-1">
             <img
-              src={mh2}
+              src={m2}
               alt="Control Room2"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -70,7 +71,7 @@ const Maritime = () => {
           {/* <!-- Third Image --> */}
           <div className="col-span-1">
             <img
-              src={mh5}
+              src={m5}
               alt="Touch Interface"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -79,7 +80,7 @@ const Maritime = () => {
           {/* <!-- Fourth Image --> */}
           <div className="col-span-1">
             <img
-              src={mh1}
+              src={m1}
               alt="Engineer at Work"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -88,7 +89,7 @@ const Maritime = () => {
           {/* <!-- Fifth Image --> */}
           <div className="col-span-1">
             <img
-              src={mh6}
+              src={m6}
               alt="Engineer at Work"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -97,7 +98,7 @@ const Maritime = () => {
           {/* <!-- sixth Image --> */}
           <div className="col-span-1">
             <img
-              src={mh7}
+              src={m7}
               alt="Engineer at Work"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -106,7 +107,7 @@ const Maritime = () => {
           {/* <!-- seventh Image --> */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <img
-              src={mh3}
+              src={m3}
               alt="Person at Computer"
               className="w-full h-full object-cover rounded-lg hover:scale-75 transition-transform ease-in-out cursor-pointer duration-500"
             />
@@ -150,7 +151,7 @@ const Maritime = () => {
           projects.
         </h4>
 
-        <img src={mh8} className="lg:max-w-[60%] max-w-[85%] rounded-2xl" />
+        <img src={m14} className="lg:max-w-[60%] max-w-[85%] rounded-2xl" />
       </div>
 
       <div className="min-h-screen bg-[#0B2D71] py-10">
@@ -318,7 +319,7 @@ const Maritime = () => {
         </h4>
 
         <div className="max-w-screen-md mx-auto">
-          <img src={m1} alt="..." className="w-full my-10 rounded-2xl" />
+          <img src={m12} alt="..." className="w-full my-10 rounded-2xl" />
         </div>
       </div>
 
@@ -360,7 +361,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m2}
+              src={m8}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -389,7 +390,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m3}
+              src={m13}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -418,7 +419,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m2}
+              src={m9}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -447,7 +448,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m3}
+              src={m15}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -476,7 +477,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m2}
+              src={m10}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -503,7 +504,7 @@ const Maritime = () => {
 
           <div className="content-right lg:w-[100%]">
             <img
-              src={m3}
+              src={m11}
               alt="card-image"
               className="md:h-auto h-auto w-full rounded-lg"
             />
@@ -515,7 +516,7 @@ const Maritime = () => {
         <h2 className="text-5xl font-bold text-[#BA3093] text-center">
           Join Hands with SIECORP
         </h2>
-        <h4 className="text-white max-w-screen-lg text-xl mx-auto text-center pt-5 tracking-wider">
+        <h4 className="text-white max-w-screen-lg text-xl mx-auto pt-5 tracking-wider">
           The future of the maritime industry is evolving rapidly, and at
           SIECORP, we are positioned to lead this transformation. Whether you
           are looking to build cutting-edge port facilities, enhance marine
