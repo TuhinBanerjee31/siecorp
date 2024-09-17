@@ -13,6 +13,7 @@ import i10 from "../assets/infraImages/i-10.png";
 import i11 from "../assets/infraImages/i-11.jpg";
 import Footer from "../components/Footer/Footer";
 
+
 const Infrastructure = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

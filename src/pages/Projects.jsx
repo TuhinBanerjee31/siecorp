@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../components/Nav/Nav";
 import p1 from "../assets/projectImages/p1.jpg";
 import p2 from "../assets/projectImages/p2.jpg";
@@ -22,7 +22,25 @@ import Footer from "../components/Footer/Footer";
 const Projects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
+  const [pro1, setPro1] = useState(false);
+  const [pro2, setPro2] = useState(false);
+  const [pro3, setPro3] = useState(false);
+  const [pro4, setPro4] = useState(false);
+  const [pro5, setPro5] = useState(false);
+  const [pro6, setPro6] = useState(false);
+  const [pro7, setPro7] = useState(false);
+  const [pro8, setPro8] = useState(false);
+  const [pro9, setPro9] = useState(false);
+  const [pro10, setPro10] = useState(false);
+  const [pro11, setPro11] = useState(false);
+  const [pro12, setPro12] = useState(false);
+  const [pro13, setPro13] = useState(false);
+  const [pro14, setPro14] = useState(false);
+  const [pro15, setPro15] = useState(false);
+  const [pro16, setPro16] = useState(false);
+  const [pro17, setPro17] = useState(false);
 
   return (
     <div className="font-suse">
@@ -30,14 +48,14 @@ const Projects = () => {
         <Nav bgImage="p-header-image" />
 
         {/* TRANSPARENT HEADER TEXT */}
-        <div className="w-full bg-white absolute bottom-0 pb-8 animate__animated animate__slideInUp">
+        <div className="w-full bg-white absolute bottom-0 pb-8">
           <h1 className="lg:text-9xl text-6xl py-6 font-bold bg-clip-text text-transparent bg-cover bg-center bg-p-header-image text-center">
             Projects Undertaken By The Siecorp
           </h1>
         </div>
       </div>
 
-      <div className="bg-[#0B2D71] flex-row items-center py-14">
+      <div className="bg-[#0B2D71] flex-row items-center py-14 transition">
         <div className="flex lg:flex-row flex-col justify-around max-w-screen-2xl mx-auto gap-10 px-4">
           <img src={p1} alt="..." className="h-96 min-w-96 rounded-2xl" />
           <div className="max-w-screen-md py-4 flex flex-col gap-3 self-end">
@@ -56,75 +74,85 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Capacity: With an installed capacity of 1,760 megawatts (MW), the
-            Jawa-1 Power Plant significantly contributes to the electricity
-            supply in Java and Bali, regions that are central to Indonesia's
-            economy.
-          </li>
-          <li className="list-disc">
-            Technology: The plant employs combined-cycle gas turbine (CCGT)
-            technology, known for its high efficiency and reduced carbon
-            emissions compared to traditional coal-fired plants. This technology
-            uses both gas and steam turbines, maximizing energy utilization.
-          </li>
-          <li className="list-disc">
-            Fuel Source: The power plant is fueled by liquefied natural gas
-            (LNG), sourced through an innovative floating storage and
-            regasification unit (FSRU) offshore. This FSRU is the first of its
-            kind in Indonesia, providing operational flexibility and
-            reliability.
-          </li>
-          <li className="list-disc">
-            Contractors: The construction of the Jawa-1 Power Plant involved
-            several key contractors, including SIECORP, a notable player in the
-            engineering and construction industry. SIECORP played a vital role
-            in ensuring the project's success by delivering high-quality
-            infrastructure and technical expertise.
-          </li>
-          <li className="list-disc">
-            Ownership and Operation: The plant is developed and operated by PT
-            Pertamina Power Indonesia, in partnership with Japan's Marubeni
-            Corporation and Sojitz Corporation. It aligns with Indonesia's
-            strategic goal of diversifying its energy mix and reducing reliance
-            on coal.
-          </li>
-          <li className="list-disc">
-            Environmental Impact: The Jawa-1 Power Plant is designed with
-            sustainability in mind, featuring advanced emission control systems
-            and adherence to international environmental standards. It is
-            expected to significantly lower greenhouse gas emissions by
-            replacing older, less efficient power generation methods.
-          </li>
-          <li className="list-disc">
-            Timeline: Construction began in 2018, with commercial operations
-            commencing in 2021. Despite challenges such as the COVID-19
-            pandemic, the project was completed within the revised schedule.
-          </li>
-          <li className="list-disc">
-            Strategic Importance: The plant is a crucial element of Indonesia's
-            national energy plan, contributing to the target of 35,000 MW of new
-            power generation capacity. It also plays a key role in stabilizing
-            the power grid in Java, where electricity demand is steadily
-            increasing.
-          </li>
-          <li className="list-disc">
-            The involvement of SIECORP, along with other major players,
-            underscores the collaborative efforts required to execute such a
-            large scale project, which is pivotal to Indonesia's ongoing energy
-            transition.
-          </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        {pro1 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Capacity: With an installed capacity of 1,760 megawatts (MW), the
+              Jawa-1 Power Plant significantly contributes to the electricity
+              supply in Java and Bali, regions that are central to Indonesia's
+              economy.
+            </li>
+            <li className="list-disc">
+              Technology: The plant employs combined-cycle gas turbine (CCGT)
+              technology, known for its high efficiency and reduced carbon
+              emissions compared to traditional coal-fired plants. This
+              technology uses both gas and steam turbines, maximizing energy
+              utilization.
+            </li>
+            <li className="list-disc">
+              Fuel Source: The power plant is fueled by liquefied natural gas
+              (LNG), sourced through an innovative floating storage and
+              regasification unit (FSRU) offshore. This FSRU is the first of its
+              kind in Indonesia, providing operational flexibility and
+              reliability.
+            </li>
+            <li className="list-disc">
+              Contractors: The construction of the Jawa-1 Power Plant involved
+              several key contractors, including SIECORP, a notable player in
+              the engineering and construction industry. SIECORP played a vital
+              role in ensuring the project's success by delivering high-quality
+              infrastructure and technical expertise.
+            </li>
+            <li className="list-disc">
+              Ownership and Operation: The plant is developed and operated by PT
+              Pertamina Power Indonesia, in partnership with Japan's Marubeni
+              Corporation and Sojitz Corporation. It aligns with Indonesia's
+              strategic goal of diversifying its energy mix and reducing
+              reliance on coal.
+            </li>
+            <li className="list-disc">
+              Environmental Impact: The Jawa-1 Power Plant is designed with
+              sustainability in mind, featuring advanced emission control
+              systems and adherence to international environmental standards. It
+              is expected to significantly lower greenhouse gas emissions by
+              replacing older, less efficient power generation methods.
+            </li>
+            <li className="list-disc">
+              Timeline: Construction began in 2018, with commercial operations
+              commencing in 2021. Despite challenges such as the COVID-19
+              pandemic, the project was completed within the revised schedule.
+            </li>
+            <li className="list-disc">
+              Strategic Importance: The plant is a crucial element of
+              Indonesia's national energy plan, contributing to the target of
+              35,000 MW of new power generation capacity. It also plays a key
+              role in stabilizing the power grid in Java, where electricity
+              demand is steadily increasing.
+            </li>
+            <li className="list-disc">
+              The involvement of SIECORP, along with other major players,
+              underscores the collaborative efforts required to execute such a
+              large scale project, which is pivotal to Indonesia's ongoing
+              energy transition.
+            </li>
+          </ul>
+        )}
+
+        {pro1 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro1(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro1(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#3A0D36] flex-row items-center py-14">
@@ -147,82 +175,91 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Capacity: The Nghi Son 2 Thermal Power Plant has a total installed
-            capacity of 1,200 megawatts (MW), consisting of two units of 600 MW
-            each. It is designed to supply a substantial portion of the
-            electricity required for the Nghi Son Economic Zone and the
-            surrounding areas.
-          </li>
-          <li className="list-disc">
-            Technology: The plant employs ultra-supercritical (USC) technology,
-            which allows for higher efficiency and lower emissions compared to
-            traditional coal-fired power plants. This technology operates at
-            higher temperatures and pressures, leading to better fuel
-            utilization and reduced environmental impact.
-          </li>
-          <li className="list-disc">
-            Fuel Source: The power plant is primarily fueled by imported coal,
-            ensuring a steady and reliable supply of fuel to meet the plant's
-            operational needs. The use of imported coal also helps diversify
-            Vietnam's energy mix and reduces dependence on domestic coal
-            resources.
-          </li>
-          <li className="list-disc">
-            Contractors: The establishment of the Nghi Son 2 Thermal Power Plant
-            involved several key contractors, including SIECORP, which played a
-            crucial role in the construction and engineering of the plant.
-            SIECORP's expertise contributed to the timely completion and
-            high-quality standards of the project.
-          </li>
-          <li className="list-disc">
-            Ownership and Operation: The project is developed and operated by
-            Nghi Son 2 Power Limited Liability Company (NS2PC), a joint venture
-            between Japan’s Marubeni Corporation and Korea Electric Power
-            Corporation (KEPCO). This collaboration brings together
-            international experience and technical know-how to ensure the
-            plant's efficient operation.
-          </li>
-          <li className="list-disc">
-            Environmental Impact: Despite being a coal-fired power plant, Nghi
-            Son 2 incorporates advanced emission control technologies to
-            minimize its environmental footprint. These include flue gas
-            desulfurization (FGD) systems, electrostatic precipitators, and
-            low-NOx burners, which reduce sulfur dioxide, particulate matter,
-            and nitrogen oxide emissions.
-          </li>
-          <li className="list-disc">
-            Timeline: Construction of the Nghi Son 2 Thermal Power Plant began
-            in 2018, and the plant commenced commercial operations in 2022. The
-            project was completed within the planned schedule, despite
-            challenges such as supply chain disruptions during the COVID-19
-            pandemic.
-          </li>
-          <li className="list-disc">
-            Strategic Importance: The plant is a critical component of Vietnam's
-            power development plan, contributing to the country's goal of
-            increasing power generation capacity to support economic growth. It
-            also provides a reliable power supply to the Nghi Son Economic Zone,
-            which is a major industrial hub in the region.
-          </li>
-          <li className="list-disc">
-            The involvement of SIECORP, along with other key contractors,
-            highlights the collaborative efforts and technical expertise
-            required to successfully deliver such a large-scale infrastructure
-            project, which is vital for Vietnam's ongoing energy and economic
-            development.
-          </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        {pro2 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Capacity: The Nghi Son 2 Thermal Power Plant has a total installed
+              capacity of 1,200 megawatts (MW), consisting of two units of 600
+              MW each. It is designed to supply a substantial portion of the
+              electricity required for the Nghi Son Economic Zone and the
+              surrounding areas.
+            </li>
+            <li className="list-disc">
+              Technology: The plant employs ultra-supercritical (USC)
+              technology, which allows for higher efficiency and lower emissions
+              compared to traditional coal-fired power plants. This technology
+              operates at higher temperatures and pressures, leading to better
+              fuel utilization and reduced environmental impact.
+            </li>
+            <li className="list-disc">
+              Fuel Source: The power plant is primarily fueled by imported coal,
+              ensuring a steady and reliable supply of fuel to meet the plant's
+              operational needs. The use of imported coal also helps diversify
+              Vietnam's energy mix and reduces dependence on domestic coal
+              resources.
+            </li>
+            <li className="list-disc">
+              Contractors: The establishment of the Nghi Son 2 Thermal Power
+              Plant involved several key contractors, including SIECORP, which
+              played a crucial role in the construction and engineering of the
+              plant. SIECORP's expertise contributed to the timely completion
+              and high-quality standards of the project.
+            </li>
+            <li className="list-disc">
+              Ownership and Operation: The project is developed and operated by
+              Nghi Son 2 Power Limited Liability Company (NS2PC), a joint
+              venture between Japan’s Marubeni Corporation and Korea Electric
+              Power Corporation (KEPCO). This collaboration brings together
+              international experience and technical know-how to ensure the
+              plant's efficient operation.
+            </li>
+            <li className="list-disc">
+              Environmental Impact: Despite being a coal-fired power plant, Nghi
+              Son 2 incorporates advanced emission control technologies to
+              minimize its environmental footprint. These include flue gas
+              desulfurization (FGD) systems, electrostatic precipitators, and
+              low-NOx burners, which reduce sulfur dioxide, particulate matter,
+              and nitrogen oxide emissions.
+            </li>
+            <li className="list-disc">
+              Timeline: Construction of the Nghi Son 2 Thermal Power Plant began
+              in 2018, and the plant commenced commercial operations in 2022.
+              The project was completed within the planned schedule, despite
+              challenges such as supply chain disruptions during the COVID-19
+              pandemic.
+            </li>
+            <li className="list-disc">
+              Strategic Importance: The plant is a critical component of
+              Vietnam's power development plan, contributing to the country's
+              goal of increasing power generation capacity to support economic
+              growth. It also provides a reliable power supply to the Nghi Son
+              Economic Zone, which is a major industrial hub in the region.
+            </li>
+            <li className="list-disc">
+              The involvement of SIECORP, along with other key contractors,
+              highlights the collaborative efforts and technical expertise
+              required to successfully deliver such a large-scale infrastructure
+              project, which is vital for Vietnam's ongoing energy and economic
+              development.
+            </li>
+          </ul>
+        )}
+
+        {pro2 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro2(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro2(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#003653] flex-row items-center py-14">
@@ -246,65 +283,84 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Project Overview: The Boundary Dam Carbon Capture Project involved
-            the retrofitting of Unit 3 at the Boundary Dam Power Station,
-            transforming it into a highly efficient and low-emission power
-            generator. The project captures approximately 90% of the carbon
-            dioxide (CO2) emissions from the plant, equating to around 1 million
-            tonnes of CO2 annually.
-          </li>
-          <li className="list-disc">
-            Technology: The project employs advanced amine-based carbon capture
-            technology, which captures CO2 from the flue gas produced during
-            coal combustion. The captured CO2 is then compressed and transported
-            via pipeline to nearby oil fields for enhanced oil recovery (EOR) or
-            sequestered in deep geological formations, preventing it from
-            entering the atmosphere.
-          </li>
-          <li className="list-disc">
-            Environmental Impact: In addition to capturing CO2, the project also
-            significantly reduces other pollutants such as sulfur dioxide (SO2)
-            and nitrogen oxides (NOx), contributing to improved air quality. The
-            captured CO2 used for EOR also helps in increasing oil production,
-            adding economic value while mitigating environmental impacts.
-          </li>
-          <li className="list-disc">
-            Contractors: The development and construction of the Boundary Dam
-            Carbon Capture Project involved several key contractors, including
-            SIECORP, which was instrumental in the engineering, procurement, and
-            construction processes. SIECORP's contribution was crucial in
-            achieving the project's high standards of performance and
-            reliability.
-          </li>
-          <li className="list-disc">
-            Ownership and Operation: The project is owned and operated by
-            SaskPower, Saskatchewan’s principal electric utility. SaskPower’s
-            initiative reflects its commitment to reducing its carbon footprint
-            and supporting Canada’s broader climate change goals.
-          </li>
-          <li className="list-disc">
-            Innovation and Legacy: The Boundary Dam Carbon Capture Project is a
-            pioneering effort that has set a global benchmark for CCS
-            technology. It serves as a model for future projects, demonstrating
-            that CCS can be effectively integrated into existing power plants to
-            significantly reduce carbon emissions.
-          </li>
-          <li className="list-disc">
-            Timeline: The project was officially launched in 2014, after several
-            years of planning, development, and construction. It represents a
-            major milestone in the global fight against climate change and a
-            critical step forward for the CCS industry.
-          </li>
-          <li className="list-disc">
-            The involvement of SIECORP in the Boundary Dam Carbon Capture
-            Project highlights the company's expertise in delivering complex and
-            innovative energy projects. Their role was essential in bringing
-            this groundbreaking project to fruition, contributing to a more
-            sustainable and environmentally responsible future.
-          </li>
-        </ul>
+        {pro3 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Project Overview: The Boundary Dam Carbon Capture Project involved
+              the retrofitting of Unit 3 at the Boundary Dam Power Station,
+              transforming it into a highly efficient and low-emission power
+              generator. The project captures approximately 90% of the carbon
+              dioxide (CO2) emissions from the plant, equating to around 1
+              million tonnes of CO2 annually.
+            </li>
+            <li className="list-disc">
+              Technology: The project employs advanced amine-based carbon
+              capture technology, which captures CO2 from the flue gas produced
+              during coal combustion. The captured CO2 is then compressed and
+              transported via pipeline to nearby oil fields for enhanced oil
+              recovery (EOR) or sequestered in deep geological formations,
+              preventing it from entering the atmosphere.
+            </li>
+            <li className="list-disc">
+              Environmental Impact: In addition to capturing CO2, the project
+              also significantly reduces other pollutants such as sulfur dioxide
+              (SO2) and nitrogen oxides (NOx), contributing to improved air
+              quality. The captured CO2 used for EOR also helps in increasing
+              oil production, adding economic value while mitigating
+              environmental impacts.
+            </li>
+            <li className="list-disc">
+              Contractors: The development and construction of the Boundary Dam
+              Carbon Capture Project involved several key contractors, including
+              SIECORP, which was instrumental in the engineering, procurement,
+              and construction processes. SIECORP's contribution was crucial in
+              achieving the project's high standards of performance and
+              reliability.
+            </li>
+            <li className="list-disc">
+              Ownership and Operation: The project is owned and operated by
+              SaskPower, Saskatchewan’s principal electric utility. SaskPower’s
+              initiative reflects its commitment to reducing its carbon
+              footprint and supporting Canada’s broader climate change goals.
+            </li>
+            <li className="list-disc">
+              Innovation and Legacy: The Boundary Dam Carbon Capture Project is
+              a pioneering effort that has set a global benchmark for CCS
+              technology. It serves as a model for future projects,
+              demonstrating that CCS can be effectively integrated into existing
+              power plants to significantly reduce carbon emissions.
+            </li>
+            <li className="list-disc">
+              Timeline: The project was officially launched in 2014, after
+              several years of planning, development, and construction. It
+              represents a major milestone in the global fight against climate
+              change and a critical step forward for the CCS industry.
+            </li>
+            <li className="list-disc">
+              The involvement of SIECORP in the Boundary Dam Carbon Capture
+              Project highlights the company's expertise in delivering complex
+              and innovative energy projects. Their role was essential in
+              bringing this groundbreaking project to fruition, contributing to
+              a more sustainable and environmentally responsible future.
+            </li>
+          </ul>
+        )}
+
+        {pro3 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro3(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro3(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#58001C] flex-row items-center py-14">
@@ -330,53 +386,72 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Water Source: The project taps into the Godavari River, India's
-            second-longest river, at Medigadda in Telangana.
-          </li>
-          <li className="list-disc">
-            Water Lift: The project is unique for its water-lifting
-            capabilities, where water is lifted to a height of about 618 meters
-            using a series of reservoirs, tunnels, and pumps. It involves
-            several stages of water lifting across a distance of around 500
-            kilometers.
-          </li>
-          <li className="list-disc">
-            Infrastructure: The KLIP includes numerous pump houses, extensive
-            canal systems, tunnels, and underground pipelines, enabling water to
-            be distributed over vast areas. The project also incorporates a
-            network of barrages, which helps in storing and controlling the flow
-            of water.
-          </li>
-          <li className="list-disc">
-            Irrigation Coverage: Upon completion, the project is expected to
-            irrigate around 18.25 lakh acres (approximately 7.39 lakh hectares)
-            of land in 13 districts of Telangana.
-          </li>
-          <li className="list-disc">
-            Drinking Water Supply: Apart from irrigation, the project also aims
-            to provide drinking water to various towns and villages and supply
-            water to Hyderabad, the capital city of Telangana.
-          </li>
-          <li className="list-disc">
-            Power Generation: The project also contributes to hydropower
-            generation, supporting the state's energy needs.
-          </li>
-          <li className="list-disc">
-            SIECORP was one of the contractors involved in the establishment of
-            the Kaleshwaram Lift Irrigation Project. The company's expertise in
-            engineering and construction was instrumental in developing critical
-            components of the project, including the design and installation of
-            key infrastructure such as pump houses and pipelines. SIECORP's
-            participation was crucial in ensuring that the project was executed
-            efficiently, meeting the stringent timelines and quality standards
-            required for such a massive and technically challenging undertaking.
-            Their contribution played a significant role in the successful
-            implementation of the project, which is now seen as a landmark
-            achievement in Indian irrigation and water resource management.
-          </li>
-        </ul>
+        {pro4 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Water Source: The project taps into the Godavari River, India's
+              second-longest river, at Medigadda in Telangana.
+            </li>
+            <li className="list-disc">
+              Water Lift: The project is unique for its water-lifting
+              capabilities, where water is lifted to a height of about 618
+              meters using a series of reservoirs, tunnels, and pumps. It
+              involves several stages of water lifting across a distance of
+              around 500 kilometers.
+            </li>
+            <li className="list-disc">
+              Infrastructure: The KLIP includes numerous pump houses, extensive
+              canal systems, tunnels, and underground pipelines, enabling water
+              to be distributed over vast areas. The project also incorporates a
+              network of barrages, which helps in storing and controlling the
+              flow of water.
+            </li>
+            <li className="list-disc">
+              Irrigation Coverage: Upon completion, the project is expected to
+              irrigate around 18.25 lakh acres (approximately 7.39 lakh
+              hectares) of land in 13 districts of Telangana.
+            </li>
+            <li className="list-disc">
+              Drinking Water Supply: Apart from irrigation, the project also
+              aims to provide drinking water to various towns and villages and
+              supply water to Hyderabad, the capital city of Telangana.
+            </li>
+            <li className="list-disc">
+              Power Generation: The project also contributes to hydropower
+              generation, supporting the state's energy needs.
+            </li>
+            <li className="list-disc">
+              SIECORP was one of the contractors involved in the establishment
+              of the Kaleshwaram Lift Irrigation Project. The company's
+              expertise in engineering and construction was instrumental in
+              developing critical components of the project, including the
+              design and installation of key infrastructure such as pump houses
+              and pipelines. SIECORP's participation was crucial in ensuring
+              that the project was executed efficiently, meeting the stringent
+              timelines and quality standards required for such a massive and
+              technically challenging undertaking. Their contribution played a
+              significant role in the successful implementation of the project,
+              which is now seen as a landmark achievement in Indian irrigation
+              and water resource management.
+            </li>
+          </ul>
+        )}
+
+        {pro4 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro4(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro4(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#444B0D] flex-row items-center py-14">
@@ -399,73 +474,92 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Capacity: The Rostov Nuclear Power Plant consists of four reactor
-            units, each with a capacity of 1,000 megawatts (MW), providing a
-            total installed capacity of 4,000 MW. This makes it one of the
-            largest power plants in the region, contributing substantially to
-            Russia’s overall energy grid.
-          </li>
-          <li className="list-disc">
-            Reactor Technology: The plant utilizes VVER-1000 pressurized water
-            reactors, a type of reactor that is known for its safety features
-            and reliability. These reactors are part of the VVER series, which
-            has been widely deployed in Russia and internationally due to their
-            proven performance and safety record.
-          </li>
-          <li className="list-disc">
-            Energy Output: The Rostov Nuclear Power Plant generates
-            approximately 30 billion kilowatt-hours (kWh) of electricity
-            annually, supplying power to millions of homes and businesses in
-            southern Russia. It is a crucial asset for meeting the region’s
-            growing energy demands.
-          </li>
-          <li className="list-disc">
-            Safety Measures: The plant is equipped with advanced safety systems,
-            including multiple layers of physical barriers, automated control
-            systems, and emergency response protocols. These measures are
-            designed to prevent the release of radioactive materials and ensure
-            the safe operation of the plant under all conditions.
-          </li>
-          <li className="list-disc">
-            Environmental Impact: As a nuclear facility, the Rostov Nuclear
-            Power Plant produces no greenhouse gas emissions during electricity
-            generation, making it a key contributor to reducing the carbon
-            footprint of Russia’s energy sector. The plant also adheres to
-            stringent environmental regulations to minimize its impact on the
-            surrounding ecosystem.
-          </li>
-          <li className="list-disc">
-            Contractors: The construction and development of the Rostov Nuclear
-            Power Plant involved several key contractors, including SIECORP,
-            which provided critical engineering, procurement, and construction
-            services. SIECORP's involvement was vital in ensuring the timely
-            completion and operational readiness of the plant's units.
-          </li>
-          <li className="list-disc">
-            Ownership and Operation: The plant is owned and operated by
-            Rosenergoatom, a subsidiary of Russia’s state nuclear corporation,
-            Rosatom. Rosenergoatom is responsible for the safe and efficient
-            operation of all nuclear power plants in Russia, and the Rostov
-            plant is a flagship in their portfolio.
-          </li>
-          <li className="list-disc">
-            Timeline: The construction of the Rostov Nuclear Power Plant began
-            in the early 1980s, with the first unit becoming operational in
-            2001. The subsequent units were commissioned over the following
-            years, with the final unit, Unit 4, being completed in 2017. The
-            plant now operates at full capacity, contributing significantly to
-            the region's power supply.
-          </li>
-          <li className="list-disc">
-            The involvement of SIECORP in the Rostov Nuclear Power Plant
-            underscores the company's capabilities in handling large-scale and
-            complex infrastructure projects. Their expertise was crucial in the
-            successful establishment of this vital energy facility, which
-            continues to be a cornerstone of Russia's nuclear energy strategy.
-          </li>
-        </ul>
+        {pro5 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Capacity: The Rostov Nuclear Power Plant consists of four reactor
+              units, each with a capacity of 1,000 megawatts (MW), providing a
+              total installed capacity of 4,000 MW. This makes it one of the
+              largest power plants in the region, contributing substantially to
+              Russia’s overall energy grid.
+            </li>
+            <li className="list-disc">
+              Reactor Technology: The plant utilizes VVER-1000 pressurized water
+              reactors, a type of reactor that is known for its safety features
+              and reliability. These reactors are part of the VVER series, which
+              has been widely deployed in Russia and internationally due to
+              their proven performance and safety record.
+            </li>
+            <li className="list-disc">
+              Energy Output: The Rostov Nuclear Power Plant generates
+              approximately 30 billion kilowatt-hours (kWh) of electricity
+              annually, supplying power to millions of homes and businesses in
+              southern Russia. It is a crucial asset for meeting the region’s
+              growing energy demands.
+            </li>
+            <li className="list-disc">
+              Safety Measures: The plant is equipped with advanced safety
+              systems, including multiple layers of physical barriers, automated
+              control systems, and emergency response protocols. These measures
+              are designed to prevent the release of radioactive materials and
+              ensure the safe operation of the plant under all conditions.
+            </li>
+            <li className="list-disc">
+              Environmental Impact: As a nuclear facility, the Rostov Nuclear
+              Power Plant produces no greenhouse gas emissions during
+              electricity generation, making it a key contributor to reducing
+              the carbon footprint of Russia’s energy sector. The plant also
+              adheres to stringent environmental regulations to minimize its
+              impact on the surrounding ecosystem.
+            </li>
+            <li className="list-disc">
+              Contractors: The construction and development of the Rostov
+              Nuclear Power Plant involved several key contractors, including
+              SIECORP, which provided critical engineering, procurement, and
+              construction services. SIECORP's involvement was vital in ensuring
+              the timely completion and operational readiness of the plant's
+              units.
+            </li>
+            <li className="list-disc">
+              Ownership and Operation: The plant is owned and operated by
+              Rosenergoatom, a subsidiary of Russia’s state nuclear corporation,
+              Rosatom. Rosenergoatom is responsible for the safe and efficient
+              operation of all nuclear power plants in Russia, and the Rostov
+              plant is a flagship in their portfolio.
+            </li>
+            <li className="list-disc">
+              Timeline: The construction of the Rostov Nuclear Power Plant began
+              in the early 1980s, with the first unit becoming operational in
+              2001. The subsequent units were commissioned over the following
+              years, with the final unit, Unit 4, being completed in 2017. The
+              plant now operates at full capacity, contributing significantly to
+              the region's power supply.
+            </li>
+            <li className="list-disc">
+              The involvement of SIECORP in the Rostov Nuclear Power Plant
+              underscores the company's capabilities in handling large-scale and
+              complex infrastructure projects. Their expertise was crucial in
+              the successful establishment of this vital energy facility, which
+              continues to be a cornerstone of Russia's nuclear energy strategy.
+            </li>
+          </ul>
+        )}
+
+        {pro5 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro5(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro5(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#0B2D71] flex-row items-center py-14">
@@ -489,84 +583,93 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
-          <li className="list-disc">
-            Project Overview: The Acorn CCS Project aims to capture and store
-            carbon dioxide (CO2) emissions from industrial sources and natural
-            gas processing facilities in the North Sea region. The project
-            leverages existing oil and gas infrastructure, making it a cost
-            effective and scalable solution for reducing greenhouse gas
-            emissions.
-          </li>
-          <li className="list-disc">
-            Technology: The project utilizes state-of-the-art carbon capture
-            technology to separate CO2 from natural gas before it is transmitted
-            through pipelines. The captured CO2 is then compressed and
-            transported via repurposed pipelines to depleted offshore gas
-            fields, where it is securely stored deep underground in geological
-            formations.
-          </li>
-          <li className="list-disc">
-            Phase Development: Acorn is being developed in phases, with the
-            initial phase focusing on capturing CO2 from the St Fergus Gas
-            Terminal. Future phases aim to expand the project’s capacity to
-            capture emissions from a broader range of industrial sources and
-            potentially import CO2 from other regions for storage.
-          </li>
-          <li className="list-disc">
-            Environmental Impact: The Acorn CCS Project is expected to
-            significantly reduce CO2 emissions, with the potential to capture
-            and store over 5 million tonnes of CO2 annually by the mid-2020s.
-            This reduction will contribute to the UK’s broader climate goals and
-            support the transition to a low-carbon economy.
-          </li>
-          <li className="list-disc">
-            Contractors: The establishment of the Acorn CCS Project involves
-            several key contractors, including SIECORP, which is providing
-            critical engineering, procurement, and construction services.
-            SIECORP's role is crucial in the development and integration of the
-            project’s complex infrastructure, ensuring its successful
-            implementation.
-          </li>
-          <li className="list-disc">
-            Ownership and Operation: The project is led by a consortium
-            including Pale Blue Dot Energy (part of Storegga), with strategic
-            support from industry partners and the UK government. The
-            collaboration is focused on delivering a reliable and efficient CCS
-            solution that aligns with national and international climate
-            objectives.
-          </li>
-          <li className="list-disc">
-            Strategic Importance: Acorn is strategically important due to its
-            location and its ability to repurpose existing infrastructure, which
-            reduces costs and accelerates deployment. The project is a key
-            component of the UK’s CCS Cluster Sequencing process, which aims to
-            establish CCS hubs across the country.
-          </li>
-          <li className="list-disc">
-            Timeline: The project has been in development since the mid-2010s,
-            with the first phase expected to become operational in the mid
-            2020s. As one of the UK’s leading CCS initiatives, Acorn is
-            positioned to play a significant role in the country’s carbon
-            reduction strategy over the coming decades.
-          </li>
-          <li className="list-disc">
-            The involvement of SIECORP in the Acorn CCS Project highlights the
-            company’s expertise in delivering complex and innovative energy
-            infrastructure projects. SIECORP’s contributions are essential to
-            the project’s success, helping to pave the way for a more
-            sustainable and low-carbon future in the UK and beyond.
-          </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        {pro6 && (
+          <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+            <li className="list-disc">
+              Project Overview: The Acorn CCS Project aims to capture and store
+              carbon dioxide (CO2) emissions from industrial sources and natural
+              gas processing facilities in the North Sea region. The project
+              leverages existing oil and gas infrastructure, making it a cost
+              effective and scalable solution for reducing greenhouse gas
+              emissions.
+            </li>
+            <li className="list-disc">
+              Technology: The project utilizes state-of-the-art carbon capture
+              technology to separate CO2 from natural gas before it is
+              transmitted through pipelines. The captured CO2 is then compressed
+              and transported via repurposed pipelines to depleted offshore gas
+              fields, where it is securely stored deep underground in geological
+              formations.
+            </li>
+            <li className="list-disc">
+              Phase Development: Acorn is being developed in phases, with the
+              initial phase focusing on capturing CO2 from the St Fergus Gas
+              Terminal. Future phases aim to expand the project’s capacity to
+              capture emissions from a broader range of industrial sources and
+              potentially import CO2 from other regions for storage.
+            </li>
+            <li className="list-disc">
+              Environmental Impact: The Acorn CCS Project is expected to
+              significantly reduce CO2 emissions, with the potential to capture
+              and store over 5 million tonnes of CO2 annually by the mid-2020s.
+              This reduction will contribute to the UK’s broader climate goals
+              and support the transition to a low-carbon economy.
+            </li>
+            <li className="list-disc">
+              Contractors: The establishment of the Acorn CCS Project involves
+              several key contractors, including SIECORP, which is providing
+              critical engineering, procurement, and construction services.
+              SIECORP's role is crucial in the development and integration of
+              the project’s complex infrastructure, ensuring its successful
+              implementation.
+            </li>
+            <li className="list-disc">
+              Ownership and Operation: The project is led by a consortium
+              including Pale Blue Dot Energy (part of Storegga), with strategic
+              support from industry partners and the UK government. The
+              collaboration is focused on delivering a reliable and efficient
+              CCS solution that aligns with national and international climate
+              objectives.
+            </li>
+            <li className="list-disc">
+              Strategic Importance: Acorn is strategically important due to its
+              location and its ability to repurpose existing infrastructure,
+              which reduces costs and accelerates deployment. The project is a
+              key component of the UK’s CCS Cluster Sequencing process, which
+              aims to establish CCS hubs across the country.
+            </li>
+            <li className="list-disc">
+              Timeline: The project has been in development since the mid-2010s,
+              with the first phase expected to become operational in the mid
+              2020s. As one of the UK’s leading CCS initiatives, Acorn is
+              positioned to play a significant role in the country’s carbon
+              reduction strategy over the coming decades.
+            </li>
+            <li className="list-disc">
+              The involvement of SIECORP in the Acorn CCS Project highlights the
+              company’s expertise in delivering complex and innovative energy
+              infrastructure projects. SIECORP’s contributions are essential to
+              the project’s success, helping to pave the way for a more
+              sustainable and low-carbon future in the UK and beyond.
+            </li>
+          </ul>
+        )}
+
+        {pro6 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro6(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro6(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#3A0D36] flex-row items-center py-14">
@@ -590,7 +693,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro7 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Singapore Smart Grid Project aims to modernize
             the nation’s electricity grid by integrating advanced digital
@@ -662,16 +765,23 @@ const Projects = () => {
             efficient, and future-ready grid that positions Singapore at the
             forefront of smart city development globally.
           </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        </ul>)}
+
+        {pro7 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro7(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro7(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#003653] flex-row items-center py-14">
@@ -694,7 +804,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro8 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Sardar Patel Dam is a concrete gravity dam,
             part of the larger Narmada Valley Development Project, which aims to
@@ -769,7 +879,23 @@ const Projects = () => {
             provide sustainable water and energy resources to millions of
             people.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro8 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro8(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro8(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#58001C] flex-row items-center py-14">
@@ -793,7 +919,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro9 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Water Source: The project taps into the Godavari River, India's
             second-longest river, at Medigadda in Telangana.
@@ -874,7 +1000,23 @@ const Projects = () => {
             contributing significantly to the country’s overall security
             framework.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro9 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro9(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro9(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#444B0D] flex-row items-center py-14">
@@ -898,7 +1040,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro10 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Port Miami Tunnel Project involves the
             construction of a 4,200-foot (1,280-meter) twin-tube tunnel beneath
@@ -972,7 +1114,23 @@ const Projects = () => {
             transportation connectivity and economic development in the Miami
             area.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro10 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro10(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro10(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#0B2D71] flex-row items-center py-14">
@@ -995,7 +1153,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro11 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The TANECO Refinery Project involves the expansion
             and modernization of the existing TANECO refinery complex. It aims
@@ -1071,16 +1229,23 @@ const Projects = () => {
             contributing significantly to its operational efficiency and
             capacity.
           </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        </ul>)}
+        
+        {pro11 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro11(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro11(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#3A0D36] flex-row items-center py-14">
@@ -1105,7 +1270,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro12 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Delhi-Mumbai Expressway is a high-speed,
             six-lane expressway that spans approximately 1,380 kilometers
@@ -1170,16 +1335,23 @@ const Projects = () => {
             successful execution of this major transportation link, contributing
             to enhanced connectivity and regional development.
           </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        </ul>)}
+
+        {pro12 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro12(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro12(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#003653] flex-row items-center py-14">
@@ -1203,7 +1375,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro13 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Amsterdam North-South Line is a key extension
             of the city’s metro system, designed to link the northern district
@@ -1276,7 +1448,23 @@ const Projects = () => {
             transportation project, contributing to the enhancement of
             Amsterdam’s public transit network.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro13 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro13(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro13(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#58001C] flex-row items-center py-14">
@@ -1300,7 +1488,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro14 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Water Source: The project taps into the Godavari River, India's
             second-longest river, at Medigadda in Telangana.
@@ -1382,7 +1570,23 @@ const Projects = () => {
             link, contributing to the advancement of India’s power grid and
             energy infrastructure.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro14 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro14(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro14(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#444B0D] flex-row items-center py-14">
@@ -1405,7 +1609,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro15 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: Hamad International Airport is a major
             transportation hub in the Middle East, serving as a key gateway for
@@ -1480,7 +1684,23 @@ const Projects = () => {
             the successful completion of the airport, contributing to its status
             as a leading global aviation hub.
           </li>
-        </ul>
+        </ul>)}
+
+        {pro15 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro15(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro15(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
       <div className="bg-[#0B2D71] flex-row items-center py-14">
@@ -1503,7 +1723,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro16 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Samsung Semiconductor Plant in Pyeongtaek is a
             cutting-edge facility dedicated to the production of memory chips,
@@ -1584,19 +1804,26 @@ const Projects = () => {
             semiconductor facility, contributing to its operational excellence
             and global significance.
           </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        </ul>)}
+        
+        {pro16 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro16(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro16(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
 
-      <div className="bg-[#3A0D36] flex-row items-center py-14">
+      <div className="bg-[#3A0D36] flex-row items-center py-14 mb-10">
         <div className="flex lg:flex-row flex-col justify-around max-w-screen-2xl mx-auto gap-10 px-4">
           <img src={p17} alt="..." className="h-96 min-w-96 rounded-2xl" />
           <div className="max-w-screen-md py-4 flex flex-col gap-3 self-end">
@@ -1617,7 +1844,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
+        {pro17 && (<ul className="lg:text-lg text-white max-w-screen-2xl px-4 mx-auto text-base py-10 tracking-wider flex flex-col gap-4">
           <li className="list-disc">
             Project Overview: The Trans Harbour Link Project aims to connect
             different regions across a large waterway or other significant
@@ -1682,16 +1909,23 @@ const Projects = () => {
             successful establishment of this critical transportation link,
             contributing to improved connectivity
           </li>
-        </ul>
-        {/* <h4 className="lg:text-xl text-lg py-4 tracking-wider">
-            Teamwork is essential to achieving our goals. We value the diverse
-            talents and perspectives of our team members and recognize that
-            collaboration drives success. At SIECORP, we work together as one
-            cohesive unit, supporting each other, sharing knowledge, and
-            celebrating our achievements. We believe that by fostering a
-            collaborative environment, we can achieve more together than we ever
-            could alone.
-          </h4> */}
+        </ul>)}
+        
+        {pro17 ? (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro17(false)}
+          >
+            Show Less...
+          </h3>
+        ) : (
+          <h3
+            className="cursor-pointer text-white pt-10 text-center text-3xl tracking-wider"
+            onClick={() => setPro17(true)}
+          >
+            Read More...
+          </h3>
+        )}
       </div>
       <Footer />
     </div>

@@ -15,7 +15,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/siecorp_logo.png";
 
-const Nav = ({bgImage}) => {
+const Nav = ({ bgImage }) => {
   // NAVBAR-LEFT-CONTENTS
   // function NavList() {
   //   return (
@@ -172,7 +172,18 @@ const Nav = ({bgImage}) => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p"
+          >
+            collaborators
+          </NavLink>
+        </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p"
+          >
             newsroom
           </NavLink>
         </div>
@@ -321,8 +332,19 @@ const Nav = ({bgImage}) => {
             careers
           </NavLink>
         </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
+            collaborators
+          </NavLink>
+        </div>
         <div className="p-1 font-medium flex">
-          <Link to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <Link
+            to={"/newsroom"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
             newsroom
           </Link>
         </div>
@@ -330,7 +352,7 @@ const Nav = ({bgImage}) => {
     );
   }
 
-  console.log(bgImage)
+  console.log(bgImage);
   const [openNav, setOpenNav] = React.useState(false);
   const [hamMenu, setHamMenu] = React.useState(false);
   const [subMenu, setSubMenu] = React.useState(false);
@@ -544,7 +566,9 @@ const Nav = ({bgImage}) => {
           </div>
 
           <div className="lg:hidden block">
-            <NavLink to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></NavLink>
+            <NavLink to={"/contact-us"}>
+              <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            </NavLink>
           </div>
         </div>
       </nav>
