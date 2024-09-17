@@ -12,7 +12,6 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/siecorp_logo.png";
 
 const Nav1 = () => {
-
   function NavLeft() {
     return (
       <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
@@ -70,7 +69,18 @@ const Nav1 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <Link to={'/newsroom'} className="flex items-center transition-colors p">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p"
+          >
+            collaborators
+          </NavLink>
+        </div>
+        <div color="white" className="p-1 font-medium">
+          <Link
+            to={"/newsroom"}
+            className="flex items-center transition-colors p"
+          >
             newsroom
           </Link>
         </div>
@@ -129,8 +139,19 @@ const Nav1 = () => {
             careers
           </NavLink>
         </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
+            collaborators
+          </NavLink>
+        </div>
         <div className="p-1 font-medium flex">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
             newsroom
           </NavLink>
         </div>
@@ -269,16 +290,17 @@ const Nav1 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
+            <Link to={"/contact-us"}>
+              <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            </Link>
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 const Nav2 = () => {
-
   function NavLeft() {
     return (
       <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
@@ -336,7 +358,18 @@ const Nav2 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p"
+          >
+            collaborators
+          </NavLink>
+        </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p"
+          >
             newsroom
           </NavLink>
         </div>
@@ -395,8 +428,19 @@ const Nav2 = () => {
             careers
           </NavLink>
         </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
+            collaborators
+          </NavLink>
+        </div>
         <div className="p-1 font-medium flex">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
             newsroom
           </NavLink>
         </div>
@@ -535,16 +579,17 @@ const Nav2 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
+            <Link to={"/contact-us"}>
+              <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            </Link>
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 const Nav3 = () => {
-
   function NavLeft() {
     return (
       <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
@@ -602,7 +647,18 @@ const Nav3 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p"
+          >
+            collaborators
+          </NavLink>
+        </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p"
+          >
             newsroom
           </NavLink>
         </div>
@@ -661,8 +717,19 @@ const Nav3 = () => {
             careers
           </NavLink>
         </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
+            collaborators
+          </NavLink>
+        </div>
         <div className="p-1 font-medium flex">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
             newsroom
           </NavLink>
         </div>
@@ -801,16 +868,17 @@ const Nav3 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
+            <Link to={"/contact-us"}>
+              <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            </Link>
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 const Nav4 = () => {
-
   function NavLeft() {
     return (
       <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
@@ -868,7 +936,18 @@ const Nav4 = () => {
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p"
+          >
+            collaborators
+          </NavLink>
+        </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p"
+          >
             newsroom
           </NavLink>
         </div>
@@ -927,8 +1006,19 @@ const Nav4 = () => {
             careers
           </NavLink>
         </div>
+        <div color="white" className="p-1 font-medium">
+          <NavLink
+            to={"/collaborators"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
+            collaborators
+          </NavLink>
+        </div>
         <div className="p-1 font-medium flex">
-          <NavLink to={'/newsroom'} className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider">
+          <NavLink
+            to={"/newsroom"}
+            className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
+          >
             newsroom
           </NavLink>
         </div>
@@ -1067,13 +1157,15 @@ const Nav4 = () => {
           </div>
 
           <div className="lg:hidden block">
-            <Link to={'/contact-us'}><EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" /></Link>
+            <Link to={"/contact-us"}>
+              <EnvelopeIcon className="h-6 w-10 mt-3 cursor-pointer" />
+            </Link>
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 const Hero = () => {
   return (
@@ -1115,7 +1207,9 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <Link to={'/our-leadership'} className="p">learn more about anchor</Link>
+                <Link to={"/our-leadership"} className="p">
+                  learn more about anchor
+                </Link>
               </div>
             </div>
           </div>
@@ -1139,7 +1233,9 @@ const Hero = () => {
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <Link to={'/infrastructure'} className="p">learn more about our infrastructure</Link>
+                <Link to={"/infrastructure"} className="p">
+                  learn more about our infrastructure
+                </Link>
               </div>
             </div>
           </div>
@@ -1155,13 +1251,17 @@ const Hero = () => {
                 Leading the way in Sustainable Energy Transformation
               </h1>
               <h5 className="mx-auto text-center lg:max-w-lg max-w-xl p-4 tracking-widest">
-                At SICORP,we are experts in renewable energy and are dedicated to transforming how sustainable energy is utilized to drive a lower carbon future.
+                At SICORP,we are experts in renewable energy and are dedicated
+                to transforming how sustainable energy is utilized to drive a
+                lower carbon future.
               </h5>
               <div className="slide_btn flex justify-center p-4 gap-3">
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <Link to={'/energy'} className="p">learn more about our energy solutions</Link>
+                <Link to={"/energy"} className="p">
+                  learn more about our energy solutions
+                </Link>
               </div>
             </div>
           </div>
@@ -1177,13 +1277,16 @@ const Hero = () => {
                 Navigating excellence in the Maritime Industry
               </h1>
               <h5 className="mx-auto text-center lg:max-w-lg max-w-xl p-4 tracking-widest">
-                Discover how SIECORP delivers top-tier maritime solutions with precision and innovation, setting new standards in the industry.
+                Discover how SIECORP delivers top-tier maritime solutions with
+                precision and innovation, setting new standards in the industry.
               </h5>
               <div className="slide_btn flex justify-center p-4 gap-3">
                 <ArrowRightIcon
                   style={{ height: "22px", alignSelf: "flex-end" }}
                 />
-                <Link to={'/maritime'} className="p">learn more about our maritime</Link>
+                <Link to={"/maritime"} className="p">
+                  learn more about our maritime
+                </Link>
               </div>
             </div>
           </div>
