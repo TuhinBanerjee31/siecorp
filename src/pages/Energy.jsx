@@ -27,7 +27,7 @@ const Energy = () => {
     titleColor: "#009DD9",
   };
   return (
-    <div className="font-suse">
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="e-header-image" />
 

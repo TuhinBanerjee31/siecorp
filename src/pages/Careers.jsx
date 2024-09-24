@@ -12,7 +12,7 @@ const Careers = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div>
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="c-header-image" />
 

@@ -15,7 +15,7 @@ const OurBrand = () => {
   });
 
   return (
-    <div className="font-suse">
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="ob-header-image" />
 

@@ -9,7 +9,7 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       {/* <div className="min-h-[70vh] bg-cu-header-image bg-cover bg-no-repeat">
       </div> */}
 

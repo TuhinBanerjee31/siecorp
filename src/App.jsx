@@ -9,14 +9,14 @@ import NewsSlider from './components/NewsSlider/NewsSlider'
 function App() {
 
   return (
-    <>
+    <div className='overflow-x-hidden'>
     <Hero />
     <About />
     <OurWork />
     <Extra />
     <NewsSlider title="latest at siecorp" />
     <Footer />
-    </>
+    </div>
   )
 }
 

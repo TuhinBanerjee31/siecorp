@@ -26,6 +26,7 @@ module.exports = withMT( {
         'p-header-image': "url('/src/assets/projectImages/p-header.jpg')",
         'cu-header-image': "url('/src/assets/cu-1.jpg')",
         'oc-header-image': "url('/src/assets/collaboratorsImage/oc-header.jpg')",
+        'n-header-image': "url('/src/assets/newsroomImage/n-header.jpg')",
         'l-header-image': "url('/src/assets/l-header.jpg')",
       },
       fontFamily: { 
