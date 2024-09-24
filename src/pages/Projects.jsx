@@ -43,7 +43,7 @@ const Projects = () => {
   const [pro17, setPro17] = useState(false);
 
   return (
-    <div className="font-suse">
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="p-header-image" />
 

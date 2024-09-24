@@ -9,7 +9,7 @@ const Location = () => {
   });
 
   return (
-    <div className="font-suse">
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="l-header-image" />
         <div className="w-full bg-white absolute bottom-0 pb-16 flex flex-col justify-center items-center">
@@ -194,21 +194,29 @@ const Location = () => {
             </Popup>
           </Marker>
 
-          <Marker position={[28.460180,77.049930]}>
+          <Marker position={[23.022510,72.506320]}>
             <Popup>
-            <b>Haryana (IND) Office:</b> Cyber Tower Plot No. 6, Sector 25A, 7th Floor Gurgaon, Haryana 122018 India
+            <b>Gujarat (IND) Office:</b> 525, Fifth Floor, Shapath V. Prahlad Nagar, S.G. Highway Ahemdabad, 380015 Gujarat, India
             </Popup>
           </Marker>
 
-          <Marker position={[19.001740,72.829320]}>
+          <Marker position={[17.697890,83.299760]}>
             <Popup>
-            <b>Maharastra (IND) Office:</b> One Indiabulls Centre 841 Senapati Bapat Marg, Elphinstone Road Mumbai, Maharashtra 400013 
+            <b>Andhra Pradesh (IND) Office:</b> The V Conference Centre Level 2, The V Tower, D. No. 12-2-825, 3rd Floor, Beside Axis Bank, Waltair Main Road, Visakhapatnam, Andhra Pradesh 530002, India. 
             </Popup>
           </Marker>
 
-          <Marker position={[22.571387,88.430636]}>
+          <Marker position={[22.687580,79.370369]}>
             <Popup>
-            <b>Kolkata (IND) Office:</b> The 42 Office 1201, 12th Floor Plot No. AP-1, Sector V, Salt Lake City Kolkata, West Bengal 700091 India
+            <b>Indore (IND) Office:</b> Brilliant Convention Centre Brilliant Convention Centre, 5th Floor, A-B Road, Opposite C21 Mall, Indore, Madhya Pradesh 452010, India.
+
+            </Popup>
+          </Marker>
+
+          <Marker position={[26.844320,80.949720]}>
+            <Popup>
+            <b>Lucknow (IND) Office:</b> Savera Group Office Savera Tower, 3rd Floor, 8/2, Park Road, Hazratganj, Lucknow, Uttar Pradesh 226001, India.
+
             </Popup>
           </Marker>
 
@@ -226,7 +234,7 @@ const Location = () => {
         </MapContainer>
       </div>
 
-      <div className="slides-container text-white mb-12">
+      <div className="slides-container max-w-screen-2xl mx-auto text-white mb-12 flex flex-wrap gap-4">
             <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
               <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
               <b>Corporate Office:</b> Suntec Tower One, 7 Temasek Boulevard, #04-01, Singapore 038987
@@ -235,7 +243,39 @@ const Location = () => {
               <b>Enquery No:</b> +65 (836) 502 38
               </h5>
             </div>
-          </div>
+
+            <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
+              <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
+              <b>India Head Office:</b> 525, Fifth Floor, Shapath V. Prahlad Nagar, S.G. Highway Ahemdabad, 380015 Gujarat, India
+              </h5>
+            </div>
+
+            <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
+              <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
+              <b>Europe Head Office:</b> Edifício Paulista 100 Avenida Paulista, Suite 2000 São Paulo, SP 01311-000 Brazil
+              </h5>
+            </div>
+
+            <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
+              <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
+              <b>North America Head Office:</b> Willis Tower 233 South Wacker Drive, Suite 7000 Chicago, IL 60606 United States
+              </h5>
+            </div>
+
+            <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
+              <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
+              <b>Russia Head Office:</b> Vostok Tower Krasny Prospekt 45/1, Floor 8 Novosibirsk 630099 Russia
+              </h5>
+            </div>
+
+            <div className="blur_sheet border-2 max-w-xl mx-auto p-5 md:rounded-3xl">
+              <h5 className="mx-auto lg:max-w-lg max-w-xl tracking-widest">
+              <b>Australia Head Office:</b> Sydney Tower 100 Market Street, Level 63 Sydney, NSW 2000 Australia
+              </h5>
+            </div>
+        </div>
+
+        
 
       <Footer />
     </div>

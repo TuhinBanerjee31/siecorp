@@ -19,7 +19,7 @@ import oc15 from "../assets/collaboratorsImage/oc-15.png"
 
 const Collaborators = () => {
   return (
-    <div className="font-suse">
+    <div className="font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="oc-header-image" />
 

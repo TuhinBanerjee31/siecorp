@@ -62,7 +62,7 @@ const CoreValues = () => {
   // ];
 
   return (
-    <div className="min-h-screen text-black font-suse">
+    <div className="min-h-screen text-black font-suse overflow-x-hidden">
       <div className="relative">
         <Nav bgImage="cv-header-image" />
 

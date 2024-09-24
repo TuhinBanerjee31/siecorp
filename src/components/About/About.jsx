@@ -9,13 +9,13 @@ const About = () => {
       <h2 className="text-white text-center py-10 text-3xl">Who we are</h2>
 
       <div className="moving-title py-10 px-5 flex flex-col">
-        <h1 className="md:text-[10rem] text-5xl font-bold text-[#009DD9] md:self-end self-center">
+        <h1 className="lg:text-[10rem] text-5xl font-bold text-[#009DD9] md:self-end self-center">
           precision
         </h1>
-        <h1 className="md:text-[10rem] text-5xl font-bold text-[#0066B2] self-center">
+        <h1 className="lg:text-[10rem] text-5xl font-bold text-[#0066B2] self-center">
           performance
         </h1>
-        <h1 className="md:text-[10rem] text-5xl font-bold text-[#0B2D71] md:self-start self-center">
+        <h1 className="lg:text-[10rem] text-5xl font-bold text-[#0B2D71] md:self-start self-center">
           progress
         </h1>
       </div>
