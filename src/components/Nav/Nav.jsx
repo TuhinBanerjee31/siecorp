@@ -6,80 +6,10 @@ import {
   XMarkIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/siecorp_logo.png";
 
 const Nav = ({ bgImage }) => {
-  // NAVBAR-LEFT-CONTENTS
-  // function NavList() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //         // onMouseLeave={() => setMenu1(true)}
-  //       >
-  //         <p className=" flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavLeft() {
     return (
@@ -95,7 +25,7 @@ const Nav = ({ bgImage }) => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className="flex items-center p transition-colors">who we are</p>
+          <p className="flex items-center p transition-colors">Who we are</p>
         </div>
         <div
           color="white"
@@ -108,14 +38,14 @@ const Nav = ({ bgImage }) => {
             handleMenu1();
           }}
         >
-          <p className="flex items-center p transition-colors">what we do</p>
+          <p className="flex items-center p transition-colors">What we do</p>
         </div>
         <div color="white" className="p-1 font-medium">
           <NavLink
             to={"/why-us"}
             className="flex items-center p transition-colors"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -123,42 +53,12 @@ const Nav = ({ bgImage }) => {
             to={"/projects"}
             className="flex items-center p transition-colors"
           >
-            projects
+            Projects
           </NavLink>
         </div>
       </ul>
     );
   }
-  // NAVBAR-RIGHT-CONTENTS
-  // function NavList2() {
-  //   return (
-  //     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 mr-7">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavRight() {
     return (
@@ -168,7 +68,7 @@ const Nav = ({ bgImage }) => {
             to={"/careers"}
             className="flex items-center transition-colors p"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -176,7 +76,7 @@ const Nav = ({ bgImage }) => {
             to={"/collaborators"}
             className="flex items-center transition-colors p"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -184,98 +84,12 @@ const Nav = ({ bgImage }) => {
             to={"/newsroom"}
             className="flex items-center transition-colors p"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
     );
   }
-  //HAMBURGER-NAVBAR-CONTENT
-  // function NavListMerge() {
-  //   return (
-  //     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="nav1 p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(true);
-  //           setMenu2(false);
-  //           setrmM1(true);
-  //           handleMenu2();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">who we are</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //         onMouseEnter={() => {
-  //           setSubMenu(true);
-  //           setMenu1(false);
-  //           setMenu2(true);
-  //           setrmM2(true);
-  //           handleMenu1();
-  //         }}
-  //       >
-  //         <p className="flex items-center p transition-colors">what we do</p>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/why-us"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           why us
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/projects"}
-  //           className="flex items-center p transition-colors"
-  //         >
-  //           projects
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <NavLink
-  //           to={"/careers"}
-  //           className="flex items-center transition-colors p"
-  //         >
-  //           careers
-  //         </NavLink>
-  //       </Typography>
-  //       <Typography
-  //         as="li"
-  //         variant="small"
-  //         color="white"
-  //         className="p-1 font-medium flex"
-  //       >
-  //         <a href="#" className="flex items-center transition-colors p">
-  //           newsroom
-  //         </a>
-  //       </Typography>
-  //     </ul>
-  //   );
-  // }
 
   function NavHam() {
     return (
@@ -291,7 +105,7 @@ const Nav = ({ bgImage }) => {
               handleMenu2();
             }}
           >
-            who we are
+            Who we are
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -305,7 +119,7 @@ const Nav = ({ bgImage }) => {
               handleMenu1();
             }}
           >
-            what we do
+            What we do
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -313,7 +127,7 @@ const Nav = ({ bgImage }) => {
             to={"/why-us"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -321,7 +135,7 @@ const Nav = ({ bgImage }) => {
             to={"/projects"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            projects
+            Projects
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -329,7 +143,7 @@ const Nav = ({ bgImage }) => {
             to={"/careers"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -337,7 +151,7 @@ const Nav = ({ bgImage }) => {
             to={"/collaborators"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -345,7 +159,7 @@ const Nav = ({ bgImage }) => {
             to={"/newsroom"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            newsroom
+            Newsroom
           </Link>
         </div>
       </ul>
@@ -409,25 +223,25 @@ const Nav = ({ bgImage }) => {
             to={"/core-values"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            core values
+            Core Values
           </NavLink>
           <NavLink
             to={"/our-brand"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our brand
+            Our Brand
           </NavLink>
           <NavLink
             to={"/our-leadership"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our leadership
+            Our Leadership
           </NavLink>
           <NavLink
             to={"/contact-us"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            contact us
+            Contact Us
           </NavLink>
         </div>
 
@@ -441,19 +255,19 @@ const Nav = ({ bgImage }) => {
             to={"/infrastructure"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            infrastructure
+            Infrastructure
           </NavLink>
           <NavLink
             to={"/energy"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            energy
+            Energy
           </NavLink>
           <NavLink
             to={"/maritime"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            maritime
+            Maritime
           </NavLink>
         </div>
 
@@ -483,61 +297,6 @@ const Nav = ({ bgImage }) => {
         </span>
         <NavHam />
       </div>
-
-      {/* <div
-        id="hover-sheet2"
-        onMouseLeave={() => setMenu2(true)}
-        className={`min-h-screen bg-[#0A3277] lg:w-[45%] w-full absolute z-10 transition-opacity animate__animated animate__slideInLeft flex flex-col justify-center gap-5 ${
-          status2 ? "hidden" : "block"
-        }`}
-      >
-       
-      </div> */}
-
-      {/* NAVBAR */}
-      {/* <Navbar className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative">
-        <div className="flex items-center justify-between text-white">
-          <div className="hidden lg:block">
-            <NavList />
-          </div>
-
-          <IconButton
-            variant="text"
-            className="h-7 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav(!openNav)}
-          >
-            {openNav ? (
-              <XMarkIcon
-                className="h-7 mt-3"
-                strokeWidth={2}
-                onClick={() => setMenu1(true)}
-              />
-            ) : (
-              <Bars3Icon className="h-7 mt-3" strokeWidth={2} />
-            )}
-          </IconButton>
-
-          <Link to={"/"} className="md:w-16 w-10 md:h-10 h-5 lg:mr-36">
-            <img src={logo} alt="Siecorp" />
-          </Link>
-
-          <div className="hidden lg:block">
-            <NavList2 />
-          </div>
-
-          <div className="lg:hidden block">
-            <EnvelopeIcon className="h-6 w-10 mt-3" />
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <NavListMerge />
-        </Collapse>
-      </Navbar> */}
-
-      {/* HAM-MENU */}
-      {/* {hamMenu && (<div className={`min-h-screen absolute z-50 bg-[#0A3277]`}></div>)} */}
 
       <nav className="mx-auto max-w-screen-2xl py-4 bg-transparent backdrop-saturate-100 shadow-none border-0 backdrop-blur-none z-20 relative px-4">
         <div className="flex items-center justify-between text-white">
