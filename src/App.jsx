@@ -9,7 +9,7 @@ import NewsSlider from './components/NewsSlider/NewsSlider'
 function App() {
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className=''>
     <Hero />
     <About />
     <OurWork />
