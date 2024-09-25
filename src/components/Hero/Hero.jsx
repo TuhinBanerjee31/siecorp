@@ -24,7 +24,7 @@ const Nav1 = () => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className="flex items-center p transition-colors">who we are</p>
+          <p className="flex items-center p transition-colors">Who we are</p>
         </div>
         <div
           color="white"
@@ -35,14 +35,14 @@ const Nav1 = () => {
             setMenu2(true);
           }}
         >
-          <p className="flex items-center p transition-colors">what we do</p>
+          <p className="flex items-center p transition-colors">What we do</p>
         </div>
         <div color="white" className="p-1 font-medium">
           <NavLink
             to={"/why-us"}
             className="flex items-center p transition-colors"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -50,7 +50,7 @@ const Nav1 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors"
           >
-            projects
+            Projects
           </NavLink>
         </div>
       </ul>
@@ -65,7 +65,7 @@ const Nav1 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -73,7 +73,7 @@ const Nav1 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -81,7 +81,7 @@ const Nav1 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p"
           >
-            newsroom
+            Newsroom
           </Link>
         </div>
       </ul>
@@ -100,7 +100,7 @@ const Nav1 = () => {
               setMenu2(false);
             }}
           >
-            who we are
+            Who we are
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -112,7 +112,7 @@ const Nav1 = () => {
               setMenu2(true);
             }}
           >
-            what we do
+            What we do
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -120,7 +120,7 @@ const Nav1 = () => {
             to={"/why-us"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -128,7 +128,7 @@ const Nav1 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            projects
+            Projects
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -136,7 +136,7 @@ const Nav1 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -144,7 +144,7 @@ const Nav1 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -152,7 +152,7 @@ const Nav1 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -188,25 +188,25 @@ const Nav1 = () => {
             to={"/core-values"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            core values
+            Core Values
           </NavLink>
           <NavLink
             to={"/our-brand"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our brand
+            Our Brand
           </NavLink>
           <NavLink
             to={"/our-leadership"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our leadership
+            Our Leadership
           </NavLink>
           <NavLink
             to={"/contact-us"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            contact us
+            Contact Us
           </NavLink>
         </div>
 
@@ -220,19 +220,19 @@ const Nav1 = () => {
             to={"/infrastructure"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            infrastructure
+            Infrastructure
           </NavLink>
           <NavLink
             to={"/energy"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            energy
+            Energy
           </NavLink>
           <NavLink
             to={"/maritime"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            maritime
+            Maritime
           </NavLink>
         </div>
 
@@ -313,7 +313,7 @@ const Nav2 = () => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className="flex items-center p transition-colors">who we are</p>
+          <p className="flex items-center p transition-colors">Who we are</p>
         </div>
         <div
           color="white"
@@ -324,14 +324,14 @@ const Nav2 = () => {
             setMenu2(true);
           }}
         >
-          <p className="flex items-center p transition-colors">what we do</p>
+          <p className="flex items-center p transition-colors">What we do</p>
         </div>
         <div color="white" className="p-1 font-medium">
           <NavLink
             to={"/why-us"}
             className="flex items-center p transition-colors"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -339,7 +339,7 @@ const Nav2 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors"
           >
-            projects
+            Projects
           </NavLink>
         </div>
       </ul>
@@ -354,7 +354,7 @@ const Nav2 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -362,7 +362,7 @@ const Nav2 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -370,7 +370,7 @@ const Nav2 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -389,7 +389,7 @@ const Nav2 = () => {
               setMenu2(false);
             }}
           >
-            who we are
+            Who we are
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -401,7 +401,7 @@ const Nav2 = () => {
               setMenu2(true);
             }}
           >
-            what we do
+            What we do
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -409,7 +409,7 @@ const Nav2 = () => {
             to={"/why-us"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -417,7 +417,7 @@ const Nav2 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            projects
+            Projects
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -425,7 +425,7 @@ const Nav2 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -433,7 +433,7 @@ const Nav2 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -441,7 +441,7 @@ const Nav2 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -477,25 +477,25 @@ const Nav2 = () => {
             to={"/core-values"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            core values
+            Core Values
           </NavLink>
           <NavLink
             to={"/our-brand"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our brand
+            Our Brand
           </NavLink>
           <NavLink
             to={"/our-leadership"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our leadership
+            Our Leadership
           </NavLink>
           <NavLink
             to={"/contact-us"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            contact us
+            Contact Us
           </NavLink>
         </div>
 
@@ -509,19 +509,19 @@ const Nav2 = () => {
             to={"/infrastructure"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            infrastructure
+            Infrastructure
           </NavLink>
           <NavLink
             to={"/energy"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            energy
+            Energy
           </NavLink>
           <NavLink
             to={"/maritime"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            maritime
+            Maritime
           </NavLink>
         </div>
 
@@ -602,7 +602,7 @@ const Nav3 = () => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className="flex items-center p transition-colors">who we are</p>
+          <p className="flex items-center p transition-colors">Who we are</p>
         </div>
         <div
           color="white"
@@ -613,14 +613,14 @@ const Nav3 = () => {
             setMenu2(true);
           }}
         >
-          <p className="flex items-center p transition-colors">what we do</p>
+          <p className="flex items-center p transition-colors">What we do</p>
         </div>
         <div color="white" className="p-1 font-medium">
           <NavLink
             to={"/why-us"}
             className="flex items-center p transition-colors"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -628,7 +628,7 @@ const Nav3 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors"
           >
-            projects
+            Projects
           </NavLink>
         </div>
       </ul>
@@ -643,7 +643,7 @@ const Nav3 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -651,7 +651,7 @@ const Nav3 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -659,7 +659,7 @@ const Nav3 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -678,7 +678,7 @@ const Nav3 = () => {
               setMenu2(false);
             }}
           >
-            who we are
+            Who we are
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -690,7 +690,7 @@ const Nav3 = () => {
               setMenu2(true);
             }}
           >
-            what we do
+            What we do
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -698,7 +698,7 @@ const Nav3 = () => {
             to={"/why-us"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -706,7 +706,7 @@ const Nav3 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            projects
+            Projects
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -714,7 +714,7 @@ const Nav3 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -722,7 +722,7 @@ const Nav3 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -730,7 +730,7 @@ const Nav3 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -766,25 +766,25 @@ const Nav3 = () => {
             to={"/core-values"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            core values
+            Core Values
           </NavLink>
           <NavLink
             to={"/our-brand"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our brand
+            Our Brand
           </NavLink>
           <NavLink
             to={"/our-leadership"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our leadership
+            Our Leadership
           </NavLink>
           <NavLink
             to={"/contact-us"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            contact us
+            Contact Us
           </NavLink>
         </div>
 
@@ -798,19 +798,19 @@ const Nav3 = () => {
             to={"/infrastructure"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            infrastructure
+            Infrastructure
           </NavLink>
           <NavLink
             to={"/energy"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            energy
+            Energy
           </NavLink>
           <NavLink
             to={"/maritime"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            maritime
+            Maritime
           </NavLink>
         </div>
 
@@ -891,7 +891,7 @@ const Nav4 = () => {
           }}
           // onMouseLeave={() => setMenu1(true)}
         >
-          <p className="flex items-center p transition-colors">who we are</p>
+          <p className="flex items-center p transition-colors">Who we are</p>
         </div>
         <div
           color="white"
@@ -902,14 +902,14 @@ const Nav4 = () => {
             setMenu2(true);
           }}
         >
-          <p className="flex items-center p transition-colors">what we do</p>
+          <p className="flex items-center p transition-colors">What we do</p>
         </div>
         <div color="white" className="p-1 font-medium">
           <NavLink
             to={"/why-us"}
             className="flex items-center p transition-colors"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -917,7 +917,7 @@ const Nav4 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors"
           >
-            projects
+            Projects
           </NavLink>
         </div>
       </ul>
@@ -932,7 +932,7 @@ const Nav4 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -940,7 +940,7 @@ const Nav4 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -948,7 +948,7 @@ const Nav4 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -967,7 +967,7 @@ const Nav4 = () => {
               setMenu2(false);
             }}
           >
-            who we are
+            Who we are
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -979,7 +979,7 @@ const Nav4 = () => {
               setMenu2(true);
             }}
           >
-            what we do
+            What we do
           </p>
         </div>
         <div className="p-1 font-medium flex">
@@ -987,7 +987,7 @@ const Nav4 = () => {
             to={"/why-us"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            why us
+            Why us
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -995,7 +995,7 @@ const Nav4 = () => {
             to={"/projects"}
             className="flex items-center p transition-colors lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            projects
+            Projects
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -1003,7 +1003,7 @@ const Nav4 = () => {
             to={"/careers"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            careers
+            Careers
           </NavLink>
         </div>
         <div color="white" className="p-1 font-medium">
@@ -1011,7 +1011,7 @@ const Nav4 = () => {
             to={"/collaborators"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            collaborators
+            Collaborators
           </NavLink>
         </div>
         <div className="p-1 font-medium flex">
@@ -1019,7 +1019,7 @@ const Nav4 = () => {
             to={"/newsroom"}
             className="flex items-center transition-colors p lg:text-5xl text-3xl text-white font-light tracking-wider"
           >
-            newsroom
+            Newsroom
           </NavLink>
         </div>
       </ul>
@@ -1055,25 +1055,25 @@ const Nav4 = () => {
             to={"/core-values"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            core values
+            Core Values
           </NavLink>
           <NavLink
             to={"/our-brand"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our brand
+            Our Brand
           </NavLink>
           <NavLink
             to={"/our-leadership"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            our leadership
+            Our Leadership
           </NavLink>
           <NavLink
             to={"/contact-us"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            contact us
+            Contact Us
           </NavLink>
         </div>
 
@@ -1087,19 +1087,19 @@ const Nav4 = () => {
             to={"/infrastructure"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            infrastructure
+            Infrastructure
           </NavLink>
           <NavLink
             to={"/energy"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            energy
+            Energy
           </NavLink>
           <NavLink
             to={"/maritime"}
             className="lg:text-5xl text-3xl text-white font-light tracking-wider pt-5 hover:text-[#0066b2] transition-colors"
           >
-            maritime
+            Maritime
           </NavLink>
         </div>
 
