@@ -28,7 +28,7 @@ const Maritime = () => {
   });
 
   return (
-    <div className="font-suse overflow-x-hidden">
+    <div className="font-suse">
       <div className="relative">
         <Nav bgImage="m-header-image" />
 
