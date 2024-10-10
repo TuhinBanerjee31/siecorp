@@ -206,12 +206,12 @@ const Location = () => {
             </Popup>
           </Marker>
 
-          <Marker position={[22.687580,79.370369]}>
+          {/* <Marker position={[22.687580,79.370369]}>
             <Popup>
             <b>Indore (IND) Office:</b> Brilliant Convention Centre Brilliant Convention Centre, 5th Floor, A-B Road, Opposite C21 Mall, Indore, Madhya Pradesh 452010, India.
 
             </Popup>
-          </Marker>
+          </Marker> */}
 
           <Marker position={[26.844320,80.949720]}>
             <Popup>
